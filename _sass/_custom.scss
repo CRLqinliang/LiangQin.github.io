@@ -35,6 +35,31 @@
   text-decoration: underline;
 }
 
+/* 按钮样式 */
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn--primary {
+  background-color: #2a7ae2;
+  color: white;
+}
+
+.btn--primary:hover {
+  background-color: #1756a9;
+  text-decoration: none;
+}
+
+.text-right {
+  text-align: right;
+  margin-top: 1.5em;
+}
+
 /* 响应式调整 */
 @media (max-width: 768px) {
   #about-me,

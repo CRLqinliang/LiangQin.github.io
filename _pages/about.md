@@ -9,63 +9,34 @@ redirect_from:
 ---
 
 <div id="about-me">
+<h2>About Me</h2>
 
 Currently, I am a Ph.D student of The University of Osaka supervised by Professor Weiwei Wan and Professor Harada. 
 
-Education
-======
-* Ph.D in Innovation system of Science and Engerinning, The University of Osaka, 2026 (expected)
-* M.S. in School of Mechanical Science & Engineering, Huazhong University of Science and Technology, 2021.
-* B.S. in School of Mechano-Electronic Engineering, XiDian University, 2018.
+<h3>Education</h3>
+<ul>
+  <li>Ph.D in Innovation system of Science and Engerinning, The University of Osaka, 2026 (expected)</li>
+  <li>M.S. in School of Mechanical Science & Engineering, Huazhong University of Science and Technology, 2021</li>
+  <li>B.S. in School of Mechano-Electronic Engineering, XiDian University, 2018</li>
+</ul>
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+<h3>Research Interests</h3>
+<ul>
+  <li>Robot Learning</li>
+  <li>Robot Manipulation</li>
+  <li>Machine Learning</li>
+</ul>
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+<h3>Skills</h3>
+<ul>
+  <li>Programming Languages: Python, C++</li>
+  <li>Machine Learning Tools: PyTorch, TensorFlow</li>
+  <li>Robotic Frameworks: ROS</li>
+</ul>
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
-
+<p class="text-right">
+  <a href="{{ site.baseurl }}/cv/" class="btn btn--primary">Full CV</a>
+</p>
 </div>
 
 <div id="recent-publications">
@@ -84,21 +55,21 @@ Service and leadership
 {% endfor %}
 </div>
 
-<div id="talks-and-presentations">
+<!-- <div id="talks-and-presentations">
 <h2>Talks and Presentations</h2>
 
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
-</div>
+</div> -->
 
-<div id="teaching">
+<!-- <div id="teaching">
 <h2>Teaching</h2>
 
 {% for post in site.teaching reversed %}
   {% include archive-single.html %}
 {% endfor %}
-</div>
+</div> -->
 
 <div id="portfolio">
 <h2>Portfolio</h2>
