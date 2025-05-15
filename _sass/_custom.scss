@@ -1,3 +1,16 @@
+/* 应用Roboto字体 */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+p, li {
+  font-weight: 400;
+}
+
 /* 定义各个区域的样式 */
 #about-me,
 #recent-publications,

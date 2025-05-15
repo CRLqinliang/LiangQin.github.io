@@ -55,7 +55,7 @@ redirect_from:
 </ul>
 </div>
 
-<div id="recent-publications">
+<!-- <div id="recent-publications">
 <h2>Recent Publications</h2>
 
 {% if site.author.googlescholar %}
@@ -69,7 +69,7 @@ redirect_from:
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
-</div>
+</div> -->
 
 <!-- <div id="talks-and-presentations">
 <h2>Talks and Presentations</h2>
