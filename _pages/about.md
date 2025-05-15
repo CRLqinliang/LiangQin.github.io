@@ -8,20 +8,20 @@ redirect_from:
   - /about.html
 ---
 
-<div id="about-me">
+<!-- <div id="about-me"> -->
 <h2>About Me</h2>
 
 <p>Hi! I'm Liang Qin, currently a Ph.D. candidate in Harada Lab, Osaka University, supervised by Prof. Weiwei Wan. My research focuses on robot manipulation, including robot gripper design, grasp pose generation, motion generation, reinforcement learning, and robot learning.</p>
-</div>
+<!-- </div> -->
 
-<div id="news">
+<!-- <div id="news"> -->
 <h2>News</h2>
 <ul>
   <li><strong>2025.05</strong>: 📝 We've released a new paper on Conservative Soft Actor-Critic algorithm.</li>
   <li><strong>2025.04</strong>: 📌 I started my Ph.D. in Harada Lab at Osaka University.</li>
   <li><strong>2025.03</strong>: 📝 We've released a new paper revisiting inverse kinematics with a refined numerical solver.</li>
 </ul>
-</div>
+<!-- </div> -->
 
 <div id="publications">
 <h2>Publications</h2>
