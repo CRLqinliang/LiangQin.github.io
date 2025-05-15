@@ -1,0 +1,51 @@
+/* 定义各个区域的样式 */
+#about-me,
+#recent-publications,
+#talks-and-presentations,
+#teaching,
+#portfolio {
+  padding: 2em 0;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #f2f3f3;
+}
+
+/* 为每个区域添加标题样式 */
+.page__content h2 {
+  margin-top: 1.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #f2f3f3;
+  font-size: 1.5em;
+}
+
+/* 添加区域间隔 */
+.publications-section,
+.talks-section,
+.teaching-section,
+.portfolio-section {
+  margin-bottom: 1.5em;
+}
+
+/* 改善链接样式 */
+.archive__item-title a {
+  text-decoration: none;
+  color: #2a7ae2;
+}
+
+.archive__item-title a:hover {
+  text-decoration: underline;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  #about-me,
+  #recent-publications,
+  #talks-and-presentations,
+  #teaching,
+  #portfolio {
+    padding: 1em 0;
+  }
+  
+  .page__content h2 {
+    font-size: 1.25em;
+  }
+} 
