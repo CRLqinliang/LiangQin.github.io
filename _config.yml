@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Liang Qin"
 title_separator          : "-"
 name                     : &name "Liang Qin"
 description              : &description "Robot learning and manipulation."
@@ -23,13 +23,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Liang Qin"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Robot learning and manipulation."
+  location         : "Osaka, Japan"
+  employer         : "Osaka University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "qin@hlab.ecs.osaka-u.ac.jp" 
 
   # Academic websites
   academia         : # URL
