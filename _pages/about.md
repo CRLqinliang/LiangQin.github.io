@@ -9,9 +9,63 @@ redirect_from:
 ---
 
 <div id="about-me">
-<h2>About Me</h2>
 
-I am a researcher focusing on robot learning and manipulation at Osaka University. My research interests include...
+Currently, I am a Ph.D student of The University of Osaka supervised by Professor Weiwei Wan and Professor Harada. 
+
+Education
+======
+* Ph.D in Innovation system of Science and Engerinning, The University of Osaka, 2026 (expected)
+* M.S. in School of Mechanical Science & Engineering, Huazhong University of Science and Technology, 2021.
+* B.S. in School of Mechano-Electronic Engineering, XiDian University, 2018.
+
+Work experience
+======
+* Spring 2024: Academic Pages Collaborator
+  * GitHub University
+  * Duties includes: Updates and improvements to template
+  * Supervisor: The Users
+
+* Fall 2015: Research Assistant
+  * GitHub University
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
+
+* Summer 2015: Research Assistant
+  * GitHub University
+  * Duties included: Tagging issues
+  * Supervisor: Professor Git
+  
+Skills
+======
+* Skill 1
+* Skill 2
+  * Sub-skill 2.1
+  * Sub-skill 2.2
+  * Sub-skill 2.3
+* Skill 3
+
+Publications
+======
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+Talks
+======
+  <ul>{% for post in site.talks reversed %}
+    {% include archive-single-talk-cv.html  %}
+  {% endfor %}</ul>
+  
+Teaching
+======
+  <ul>{% for post in site.teaching reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+Service and leadership
+======
+* Currently signed in to 43 different slack teams
+
 </div>
 
 <div id="recent-publications">
