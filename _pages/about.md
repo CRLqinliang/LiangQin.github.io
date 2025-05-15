@@ -12,7 +12,7 @@ redirect_from:
 <h2>About Me</h2>
 
 <p>🎉 Hi! I'm Liang Qin, currently a Ph.D. candidate in <a href="https://www.roboticmanipulation.org/" target="_blank">Harada Lab</a>, the University of Osaka, supervised by <a href="https://wanweiwei07.github.io/" target="_blank">Prof. Weiwei Wan</a>. Previously, I was a Ph.D student in Robot Learning Group of <a href="http://www.rlg.sys.es.osaka-u.ac.jp/" target="_blank">Nagai Lab</a>, supervised by Prof.Nagai🙏. Before join to the Unversity of Osaka, I finished my Master Course at <a herf="https://dmet.hust.edu.cn/index.htm" target="_blank"> State Key Laboratory of Intelligent Manufactureing Equipment and Technology</a> of Huazhong University of Science and Technology(HUST), supervised by Prof.Wenyu Yang. And I got my Bechalor degree in School of Mechano-Electronic Engineering of XiDian Univeristy(XDU) in 2018. 
-
+<br>
 Form undergraduated student to Ph.D student period, my research focus on robot manipulation, including robot gripper design, grasp pose and motion generation, and robot learning.</p>
 <!-- </div> -->
 
@@ -38,8 +38,8 @@ Form undergraduated student to Ph.D student period, my research focus on robot m
 <div id="research-experience">
 <h2>Research Experience</h2>
 <ul>
-  <li><strong>Harada lab (Research Student)</strong><br>Oct. 2024 - Apr. 2025<br>Supervised by Prof. Weiwei Wan</li>
-  <li><strong>Shanghai AI laboratory (Remote Research)</strong><br>Feb. 2024 - present<br>Supervised by Dr. Chenjia Bai</li>
+  <li><strong>Harada lab (Research Assitant)</strong><br>Aug. 2024 - present<br>Supervised by Prof. Weiwei Wan</li>
+  <li><strong>Nagai lab (Research Assitant)</strong><br>Jan. 2023 - Mar. 2024<br>Supervised by Prof. Nagai</li>
 </ul>
 </div>
 
