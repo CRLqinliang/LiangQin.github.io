@@ -11,9 +11,9 @@ redirect_from:
 <!-- <div id="about-me"> -->
 <h2>About Me</h2>
 
-<p>🎉 Hi! I'm Liang Qin, currently a Ph.D. candidate in <a href="https://www.roboticmanipulation.org/" target="_blank">Harada Lab</a>, the University of Osaka, supervised by <a href="https://wanweiwei07.github.io/" target="_blank">Prof. Weiwei Wan</a>. Previously, I was a Ph.D student in Robot Learning Group of <a href="http://www.rlg.sys.es.osaka-u.ac.jp/" target="_blank">Nagai Lab</a>, supervised by Prof.Nagai🙏. Before join to the Unversity of Osaka, I finished my Master Course at <a herf="https://dmet.hust.edu.cn/index.htm" target="_blank"> State Key Laboratory of Intelligent Manufactureing Equipment and Technology</a> of Huazhong University of Science and Technology(HUST), supervised by Prof.Wenyu Yang. And I got my Bechalor degree in School of Mechano-Electronic Engineering of XiDian Univeristy(XDU) in 2018. 
-<br>
-Form undergraduated student to Ph.D student period, my research focus on robot manipulation, including robot gripper design, grasp pose and motion generation, and robot learning.</p>
+<p>🎉 Hi! I'm Liang Qin, currently a Ph.D. candidate in <a href="https://www.roboticmanipulation.org/" target="_blank">Harada Lab</a>, the University of Osaka, supervised by <a href="https://wanweiwei07.github.io/" target="_blank">Prof. Weiwei Wan</a>. Previously, I was a Ph.D student in Robot Learning Group of <a href="http://www.rlg.sys.es.osaka-u.ac.jp/" target="_blank">Nagai Lab</a>, supervised by Prof.Nagai🙏. Before join to the Unversity of Osaka, I finished my Master Course at <a herf="https://dmet.hust.edu.cn/index.htm" target="_blank"></a> State Key Laboratory of Intelligent Manufactureing Equipment and Technology</a> of Huazhong University of Science and Technology(HUST), supervised by Prof.Wenyu Yang. And I got my Bechalor degree in School of Mechano-Electronic Engineering of XiDian Univeristy(XDU) in 2018. 
+<br><br>
+Form undergraduated student to Ph.D student period, my research focus on ✍️<strong>robot manipulation</strong>, including ✌️robot gripper design, 🫳grasp pose and motion generation, and 📑robot learning.</p>
 <!-- </div> -->
 
 
@@ -34,6 +34,20 @@ Form undergraduated student to Ph.D student period, my research focus on robot m
 </ul>
 </div>
 
+<div id="publications">
+<h2>Publications</h2>
+<ul>
+  <li><strong>Causal selected sub-goals extraction from the offline learning world model</strong><br>Liang Qin, Akifumi Masui, Takayuki Nagai.<br><em>ICRA2023 Workshop on Avatar-Symbiotic Society</em></li>
+</ul>
+</div>
+
+<div id="rewards">
+<h2>Rewards</h2>
+<ul>
+  <li><strong>Causal selected sub-goals extraction from the offline learning world model</strong></li>
+  <li>... </li>
+</ul>
+</div>
 
 <div id="research-experience">
 <h2>Research Experience</h2>
@@ -48,20 +62,6 @@ Form undergraduated student to Ph.D student period, my research focus on robot m
 <ul>
   <li><strong>Huawei Technology Co., Ltd., ShangHai</strong><br>Jul.2021 - Jul. 2022<br>2012 Labs - Precision and Intelligent Equipment R&D Engineer<br>Mechanical structure design of high‑precision equipment, and test equipment；Control algorithms design for production motion equipment.；Optimal Process Parameter Searching.</li>
   <li><strong>Cobot Technology Co., Ltd., WuHan</strong><br>Jun.2019 - Sep.2019<br>Develop active impedance control algorithm, design passive adaptive gripper for peg-in-hole task; Inverse kinematic model of UR5 and MH5F.</li>
-</ul>
-</div>
-
-<div id="publications">
-<h2>Publications</h2>
-<ul>
-  <li><strong>Causal selected sub-goals extraction from the offline learning world model</strong><br>Liang Qin, Akifumi Masui, Takayuki Nagai.<br><em>ICRA2023 Workshop on Avatar-Symbiotic Society</em></li>
-</ul>
-</div>
-
-<div id="rewards">
-<h2>Rewards</h2>
-<ul>
-  <li><strong>Causal selected sub-goals extraction from the offline learning world model</strong><br>Liang Qin, Akifumi Masui, Takayuki Nagai.<br><em>ICRA2023 Workshop on Avatar-Symbiotic Society</em></li>
 </ul>
 </div>
 
