@@ -35,7 +35,8 @@ redirect_from:
 <section id="publications" class="home-section" aria-labelledby="publications-heading">
   <span id="recent-publications" class="home-anchor" aria-hidden="true"></span>
   <h2 id="publications-heading">Publications</h2>
-  <article class="publication-card">
+  {% include featured-publications.html %}
+  <article class="publication-card publication-card--workshop">
     <p class="home-eyebrow">2023 · Workshop paper</p>
     <h3>Causal selected sub-goals extraction from the offline learning world model</h3>
     <p><strong>Liang Qin</strong>, Akifumi Masui, Takayuki Nagai</p>
