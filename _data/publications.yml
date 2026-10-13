@@ -23,3 +23,15 @@
   image: "/images/publications/planned-data.png"
   image_alt: "A shared grasp connecting the initial and goal object poses in a robotic pick-and-place task, from Figure 1."
   summary: "An energy-based model predicts shared grasps to reduce the search needed for robotic pick-and-place planning."
+
+- title: "Causal selected sub-goals extraction from the offline learning world model"
+  authors: "Liang Qin, Akifumi Masui, Takayuki Nagai"
+  year: 2023
+  status: "ICRA workshop"
+  venue: "ICRA 2023 Workshop on Avatar-Symbiotic Society · Extended abstract"
+  paper_url: "/files/icra-2023-causal-subgoals.pdf"
+  paper_label: "PDF"
+  pdf_url: "/files/icra-2023-causal-subgoals.pdf"
+  image: "/images/publications/causal-subgoals.png"
+  image_alt: "Causal sub-goal extraction from a bottleneck world model and transfer to a target agent, from Figure 1."
+  summary: "Counterfactual analysis of a learned world model extracts interpretable sub-goals to guide reinforcement learning in new environments."
