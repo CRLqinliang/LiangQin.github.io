@@ -1,0 +1,1 @@
+{% assign organization = site.data.organizations[include.key] %}<span class="organization"><span class="organization-logo organization-logo--{{ include.key }}" aria-hidden="true"><img src="{{ organization.logo | relative_url }}" alt="" loading="lazy" decoding="async"></span><a href="{{ organization.url }}">{{ include.label | default: organization.name }}</a></span>

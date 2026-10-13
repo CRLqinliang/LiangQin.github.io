@@ -111,3 +111,21 @@ a:focus-visible, button:focus-visible {
 
 .research-thumbnail { background: #fff; border-radius: 5px; overflow: hidden; margin-bottom: 1rem; }
 .research-thumbnail img { display: block; width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: contain; margin: 0; }
+
+/* Official organization marks preceding school/company names. */
+.organization { display: inline-flex; align-items: center; gap: 0.65rem; max-width: 100%; vertical-align: middle; }
+.organization a { min-width: 0; overflow-wrap: anywhere; }
+.organization-logo { display: inline-flex; flex: 0 0 48px; width: 48px; height: 44px; align-items: center; justify-content: center; overflow: hidden; background: #fff; border-radius: 5px; }
+.organization-logo img { display: block; width: 38px; height: 38px; object-fit: contain; margin: 0; }
+/* Display only the emblem at the beginning of the official combined marks. */
+.organization-logo--hust { flex-basis: 56px; width: 56px; background: #17675e; justify-content: flex-start; }
+.organization-logo--hust img { flex: none; width: auto; max-width: none; height: 42px; object-fit: initial; }
+.organization-logo--xidian { flex-basis: 46px; width: 46px; justify-content: flex-start; }
+.organization-logo--xidian img { flex: none; width: auto; max-width: none; height: 40px; object-fit: initial; }
+.organization-logo--cobot { flex-basis: 72px; width: 72px; background: #17675e; }
+.organization-logo--cobot img { width: 62px; height: 32px; }
+.author__urls .organization { gap: 0.35rem; }
+.author__urls .organization-logo { flex-basis: 20px; width: 20px; height: 20px; border-radius: 3px; }
+.author__urls .organization-logo img { width: 17px; height: 17px; }
+.page__content .organization-logo img { margin: 0; }
+.organization-logo--osaka { background: #164c88; }

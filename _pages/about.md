@@ -41,9 +41,9 @@ redirect_from:
 <section id="education" class="home-section" aria-labelledby="education-heading">
   <h2 id="education-heading">Education</h2>
   <ul class="home-timeline">
-    <li><p class="timeline-date">2026 (expected)</p><div><h3>Ph.D. in Innovation Systems of Science and Engineering</h3><p>The University of Osaka</p></div></li>
-    <li><p class="timeline-date">2021</p><div><h3>M.S. in Mechanical Science &amp; Engineering</h3><p>Huazhong University of Science and Technology</p></div></li>
-    <li><p class="timeline-date">2018</p><div><h3>B.S. in Mechano-Electronic Engineering</h3><p>Xidian University</p></div></li>
+    <li><p class="timeline-date">2026 (expected)</p><div><h3>Ph.D. in Innovation Systems of Science and Engineering</h3><p>{% include organization.html key="osaka" %}</p></div></li>
+    <li><p class="timeline-date">2021</p><div><h3>M.S. in Mechanical Science &amp; Engineering</h3><p>{% include organization.html key="hust" %}</p></div></li>
+    <li><p class="timeline-date">2018</p><div><h3>B.S. in Mechano-Electronic Engineering</h3><p>{% include organization.html key="xidian" %}</p></div></li>
   </ul>
 </section>
 
@@ -59,8 +59,8 @@ redirect_from:
 <section id="work-experience" class="home-section" aria-labelledby="work-heading">
   <h2 id="work-heading">Industry experience</h2>
   <ul class="home-timeline">
-    <li><p class="timeline-date">Jul. 2021 — Jul. 2022</p><div><h3>R&amp;D Engineer · Huawei</h3><p>2012 Labs · Shanghai</p><p>Mechanical design of high-precision and test equipment, motion control algorithms for production equipment, and process parameter optimization.</p></div></li>
-    <li><p class="timeline-date">Jun. 2019 — Sep. 2019</p><div><h3>Intern · Cobot Technology</h3><p>Wuhan</p><p>Active impedance control, passive adaptive gripper design for peg-in-hole tasks, and inverse kinematic modeling of UR5 and MH5F robots.</p></div></li>
+    <li><p class="timeline-date">Jul. 2021 — Jul. 2022</p><div><h3>R&amp;D Engineer · {% include organization.html key="huawei" %}</h3><p>2012 Labs · Shanghai</p><p>Mechanical design of high-precision and test equipment, motion control algorithms for production equipment, and process parameter optimization.</p></div></li>
+    <li><p class="timeline-date">Jun. 2019 — Sep. 2019</p><div><h3>Intern · {% include organization.html key="cobot" %}</h3><p>Wuhan</p><p>Active impedance control, passive adaptive gripper design for peg-in-hole tasks, and inverse kinematic modeling of UR5 and MH5F robots.</p></div></li>
   </ul>
 </section>
 </div>
