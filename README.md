@@ -5,6 +5,8 @@ Personal academic website built with [Academic Pages](https://github.com/academi
 ## Editing the website
 
 - `_pages/about.md`: homepage biography, research interests, publication, education, and experience.
+- `_data/publications.yml`: featured paper metadata, links, and thumbnails shared by homepage and CV. Add new entries at the top.
+- `images/publications/`: thumbnail assets and their source credits.
 - `_pages/cv.md`: curriculum vitae. Keep dates and entries consistent with the homepage.
 - `_config.yml`: name, contact details, profile links, and deployment URL.
 - `_data/navigation.yml`: navigation. Each homepage fragment must match an existing section ID.

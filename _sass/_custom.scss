@@ -91,3 +91,20 @@ a:focus-visible, button:focus-visible {
   .academic-home .home-lead { font-size: 1.15rem; }
   .academic-home .home-section { padding: 1.4rem 0; }
 }
+
+/* Featured papers: figure thumbnails beside the citation, stacked on small screens. */
+.publication-list { display: grid; gap: 1rem; margin-bottom: 1rem; }
+.publication-card--featured { display: grid; grid-template-columns: 10rem minmax(0, 1fr); gap: 1.1rem; align-items: start; }
+.publication-thumbnail { display: block; background: #fff; border-radius: 5px; overflow: hidden; }
+.publication-thumbnail img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; margin: 0; }
+.academic-home .publication-details h3 a { color: var(--global-text-color); text-decoration: none; }
+.academic-home .publication-details h3 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.academic-home .publication-authors { font-size: 0.8rem; line-height: 1.6; }
+.academic-home .publication-summary { font-size: 0.85rem; line-height: 1.65; }
+.publication-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem; }
+.academic-home .publication-links a { padding: 0.3rem 0.65rem; border: 1px solid var(--home-accent); border-radius: 5px; color: var(--home-accent); font-size: 0.75rem; font-weight: 600; text-decoration: none; }
+.academic-home .publication-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 800px) {
+  .publication-card--featured { grid-template-columns: 1fr; }
+  .publication-thumbnail { max-width: 20rem; }
+}

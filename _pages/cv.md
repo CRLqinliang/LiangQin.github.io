@@ -35,6 +35,15 @@ Active impedance control, passive adaptive gripper design for peg-in-hole tasks,
 
 ## Publications
 
+{% for publication in site.data.publications %}
+**[{{ publication.title }}]({{ publication.paper_url }})**<br>
+{{ publication.authors }}<br>
+*{{ publication.venue }}.*<br>
+[PDF]({{ publication.pdf_url }}){% if publication.preprint_url %} · [Author preprint]({{ publication.preprint_url }}){% endif %}
+
+{% endfor %}
+### Workshop paper
+
 **Causal selected sub-goals extraction from the offline learning world model**<br>
 Liang Qin, Akifumi Masui, Takayuki Nagai.<br>
 *ICRA 2023 Workshop on Avatar-Symbiotic Society.*
