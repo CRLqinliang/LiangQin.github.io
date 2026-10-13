@@ -1,18 +1,18 @@
 <div class="publication-list">
   {% for publication in site.data.publications %}
   <article class="publication-card publication-card--featured">
-    <a class="publication-thumbnail" href="{{ publication.paper_url }}" aria-label="Read {{ publication.title | escape }}">
+    <a class="publication-thumbnail" href="{{ publication.paper_url | relative_url }}" aria-label="Read {{ publication.title | escape }}">
       <img src="{{ publication.image | relative_url }}" alt="{{ publication.image_alt | escape }}" loading="lazy" decoding="async" width="830" height="614">
     </a>
     <div class="publication-details">
       <p class="home-eyebrow">{{ publication.year }} · {{ publication.status }}</p>
-      <h3><a href="{{ publication.paper_url }}">{{ publication.title }}</a></h3>
+      <h3><a href="{{ publication.paper_url | relative_url }}">{{ publication.title }}</a></h3>
       <p class="publication-authors">{{ publication.authors | replace: 'Liang Qin', '<strong>Liang Qin</strong>' }}</p>
       <p class="publication-venue">{{ publication.venue }}</p>
       <p class="publication-summary">{{ publication.summary }}</p>
       <div class="publication-links">
-        <a href="{{ publication.paper_url }}" aria-label="{{ publication.paper_label }}: {{ publication.title | escape }}">{{ publication.paper_label }}</a>
-        <a href="{{ publication.pdf_url }}" aria-label="PDF: {{ publication.title | escape }}">PDF</a>
+        <a href="{{ publication.paper_url | relative_url }}" aria-label="{{ publication.paper_label }}: {{ publication.title | escape }}">{{ publication.paper_label }}</a>
+        {% if publication.pdf_url != publication.paper_url %}<a href="{{ publication.pdf_url | relative_url }}" aria-label="PDF: {{ publication.title | escape }}">PDF</a>{% endif %}
         {% if publication.preprint_url %}<a href="{{ publication.preprint_url }}" aria-label="Author preprint: {{ publication.title | escape }}">Author preprint</a>{% endif %}
       </div>
     </div>

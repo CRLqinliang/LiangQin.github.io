@@ -6,3 +6,5 @@ Thumbnails are crops of Figure 1 from the author's public papers, rendered direc
 - `regrasp-connectivity.png`: Figure 1, [Differentiable Object Pose Connectivity Metrics for Regrasp Sequence Optimization](https://arxiv.org/abs/2604.14733), arXiv v1, 2026.
 
 Authors: Liang Qin and coauthors, as listed in `_data/publications.yml`. Keep this source record when replacing thumbnail images.
+
+- `causal-subgoals.png`: Figure 1, *Causal selected sub-goals extraction from the offline learning world model*, Liang Qin, Akifumi Masui, Takayuki Nagai, ICRA 2023 Workshop on Avatar-Symbiotic Society. Rendered from the author-provided extended abstract, available at `files/icra-2023-causal-subgoals.pdf`.
