@@ -1,64 +1,44 @@
 ---
-layout: archive
-title: "CV"
+layout: single
+title: "Curriculum vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+## Education
 
-Education
-======
-* Ph.D in Innovation system of Science and Engerinning, The University of Osaka, 2026 (expected)
-* M.S. in School of Mechanical Science & Engineering, Huazhong University of Science and Technology, 2021.
-* B.S. in School of Mechano-Electronic Engineering, XiDian University, 2018.
+- **Ph.D. in Innovation Systems of Science and Engineering**, The University of Osaka, 2026 (expected)
+- **M.S. in Mechanical Science & Engineering**, Huazhong University of Science and Technology, 2021
+- **B.S. in Mechano-Electronic Engineering**, Xidian University, 2018
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Research interests
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Robot manipulation, robot gripper design, grasp pose and motion generation, and robot learning.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Research experience
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+**Research Assistant, Harada Lab** · Aug. 2024 – present<br>
+Supervised by Prof. Weiwei Wan.
+
+**Research Assistant, Nagai Lab** · Jan. 2023 – Mar. 2024<br>
+Supervised by Prof. Takayuki Nagai.
+
+## Industry experience
+
+**R&D Engineer, Huawei Technology Co., Ltd., Shanghai** · Jul. 2021 – Jul. 2022<br>
+2012 Labs. Mechanical design of high-precision and test equipment, motion control algorithms for production equipment, and process parameter optimization.
+
+**Intern, Cobot Technology Co., Ltd., Wuhan** · Jun. 2019 – Sep. 2019<br>
+Active impedance control, passive adaptive gripper design for peg-in-hole tasks, and inverse kinematic modeling of UR5 and MH5F robots.
+
+## Publications
+
+**Causal selected sub-goals extraction from the offline learning world model**<br>
+Liang Qin, Akifumi Masui, Takayuki Nagai.<br>
+*ICRA 2023 Workshop on Avatar-Symbiotic Society.*
+
+## Contact
+
+[Email](mailto:{{ site.author.email }}) · [ORCID]({{ site.author.orcid }}) · [GitHub](https://github.com/{{ site.author.github }})

@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Home Page"
+title                    : "Liang Qin"
 title_separator          : "-"
 name                     : &name "Liang Qin"
 description              : &description "Robot learning and manipulation."
@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Robot learning and manipulation."
   location         : "Osaka, Japan"
-  employer         : "Osaka University"
+  employer         : "The University of Osaka"
   uri              : # URL
   email            : "qin@hlab.ecs.osaka-u.ac.jp" 
 
@@ -36,7 +36,7 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : "https://orcid.org/my-orcid?orcid=0009-0005-7329-6329"
+  orcid            : "https://orcid.org/0009-0005-7329-6329"
   semantic         : # URL
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
@@ -46,7 +46,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : #"academicpages"
+  github           : "CRLqinliang"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -60,7 +60,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "LIANG QIN"
+  linkedin         : # Add your LinkedIn profile slug when available
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

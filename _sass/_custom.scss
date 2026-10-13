@@ -1,90 +1,93 @@
-/* 应用Roboto字体 */
+/* Personal academic homepage; shared components retain the theme's behavior. */
+:root {
+  --home-accent: #17675e;
+  --home-surface: #f4f8f7;
+  --home-muted: #53636b;
+}
+html[data-theme="dark"] {
+  --home-accent: #8bdbca;
+  --home-surface: #35423f;
+  --home-muted: #c5d2cf;
+}
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
-
-h1, h2, h3, h4, h5, h6 {
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--home-accent);
+  outline-offset: 4px;
+}
+.academic-home {
+  font-size: 1rem;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+}
+.academic-home .home-section {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+  scroll-margin-top: 6rem;
+}
+.academic-home .home-intro { padding-top: 0.5rem; }
+.academic-home h2 {
+  margin: 0 0 1.1rem;
+  padding: 0;
+  border: 0;
+  font-size: 1.4rem;
+  letter-spacing: -0.025em;
+}
+.academic-home h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.academic-home p { margin: 0 0 1rem; }
+.academic-home .home-eyebrow {
+  color: var(--home-accent);
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.academic-home .home-lead {
+  font-size: 1.3rem;
+  line-height: 1.5;
   font-weight: 500;
+  letter-spacing: -0.02em;
 }
-
-p, li {
-  font-weight: 300;
-}
-
-/* 定义各个区域的样式 */
-#about-me,
-#recent-publications,
-#talks-and-presentations,
-#teaching,
-#portfolio {
-  padding: 2em 0;
-  margin-bottom: 2em;
-  border-bottom: 1px solid #f2f3f3;
-}
-
-/* 为每个区域添加标题样式 */
-.page__content h2 {
-  margin-top: 1.5em;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #f2f3f3;
-  font-size: 1.5em;
-}
-
-/* 添加区域间隔 */
-.publications-section,
-.talks-section,
-.teaching-section,
-.portfolio-section {
-  margin-bottom: 1.5em;
-}
-
-/* 改善链接样式 */
-.archive__item-title a {
-  text-decoration: none;
-  color: #2a7ae2;
-}
-
-.archive__item-title a:hover {
-  text-decoration: underline;
-}
-
-/* 按钮样式 */
-.btn {
+.home-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0 0.5rem; }
+.academic-home a.home-button {
   display: inline-block;
-  padding: 0.5em 1em;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.btn--primary {
-  background-color: #2a7ae2;
-  color: white;
-}
-
-.btn--primary:hover {
-  background-color: #1756a9;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--home-accent);
+  border-radius: 6px;
+  background: var(--home-accent);
+  color: var(--global-bg-color);
+  font-size: 0.85rem;
+  font-weight: 600;
   text-decoration: none;
 }
-
-.text-right {
-  text-align: right;
-  margin-top: 1.5em;
+.academic-home a.home-button--secondary { background: transparent; color: var(--home-accent); }
+.academic-home a.home-button:hover { text-decoration: underline; text-underline-offset: 4px; }
+.research-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.8rem; }
+.research-card, .publication-card {
+  padding: 1.15rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  background: var(--home-surface);
 }
-
-/* 响应式调整 */
-@media (max-width: 768px) {
-  #about-me,
-  #recent-publications,
-  #talks-and-presentations,
-  #teaching,
-  #portfolio {
-    padding: 1em 0;
-  }
-  
-  .page__content h2 {
-    font-size: 1.25em;
-  }
-} 
+.research-number { display: block; margin-bottom: 0.75rem; color: var(--home-accent); font-size: 0.8rem; font-weight: 600; }
+.academic-home .research-card p { margin: 0; color: var(--home-muted); font-size: 0.85rem; line-height: 1.6; }
+.publication-card { border-left: 3px solid var(--home-accent); }
+.academic-home .publication-card p { margin-bottom: 0.4rem; }
+.academic-home .publication-venue { color: var(--home-muted); font-style: italic; font-size: 0.9rem; }
+.academic-home .home-timeline { margin: 0; padding: 0; list-style: none; }
+.home-timeline li { display: grid; grid-template-columns: 10rem minmax(0, 1fr); gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--global-border-color); }
+.home-timeline li:first-child { border-top: 0; padding-top: 0; }
+.academic-home .home-timeline p { margin: 0 0 0.4rem; }
+.academic-home .timeline-date { color: var(--home-muted); font-size: 0.8rem; padding-top: 0.15rem; }
+.home-anchor { display: block; scroll-margin-top: 6rem; }
+@media (max-width: 640px) {
+  .research-grid { grid-template-columns: 1fr; }
+  .home-timeline li { grid-template-columns: 1fr; gap: 0.25rem; }
+  .academic-home .home-lead { font-size: 1.15rem; }
+  .academic-home .home-section { padding: 1.4rem 0; }
+}
