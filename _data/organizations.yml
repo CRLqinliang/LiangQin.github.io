@@ -1,0 +1,20 @@
+osaka:
+  name: "The University of Osaka"
+  logo: "/images/organizations/osaka.svg"
+  url: "https://www.osaka-u.ac.jp/en"
+hust:
+  name: "Huazhong University of Science and Technology"
+  logo: "/images/organizations/hust.png"
+  url: "https://www.hust.edu.cn/"
+xidian:
+  name: "Xidian University"
+  logo: "/images/organizations/xidian.png"
+  url: "https://www.xidian.edu.cn/"
+huawei:
+  name: "Huawei"
+  logo: "/images/organizations/huawei.png"
+  url: "https://www.huawei.com/en/"
+cobot:
+  name: "Cobot Technology"
+  logo: "/images/organizations/cobot.webp"
+  url: "https://www.cobotsys.com/"
