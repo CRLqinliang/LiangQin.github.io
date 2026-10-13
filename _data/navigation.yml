@@ -1,36 +1,12 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
-
+# Only link to populated sections. Internal paths include the configured baseurl.
 main:
-  - title: "Home"
-    url: /
-
+  - title: "Research"
+    url: /#research
   - title: "Publications"
-    url: /#recent-publications
-
-  - title: "Talks"
-    url: /#talks-and-presentations
-
-  - title: "Teaching"
-    url: /#teaching
-    
-  - title: "Portfolio"
-    url: /#portfolio
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
+    url: /#publications
+  - title: "Education"
+    url: /#education
+  - title: "Experience"
+    url: /#experience
   - title: "CV"
     url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
