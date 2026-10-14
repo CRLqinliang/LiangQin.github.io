@@ -1,6 +1,6 @@
 # Official organization logos
 
-Assets are hosted locally to avoid external image requests. Original files are retained unchanged; CSS displays the emblem portion of the HUST and Xidian combined marks. The light logo variants use a dark teal backing for legibility. These identify the education and employment entries on the author's personal CV.
+Assets are hosted locally to avoid external image requests. Original files are retained unchanged; CSS displays the emblem portion of the HUST and Xidian combined marks. The HUST and Cobot reverse-white variants use CSS contrast filters on a transparent background, appearing dark in light mode and white in dark mode. Osaka retains its blue backing for the official white emblem. These identify the education and employment entries on the author's personal CV.
 
 - `osaka.svg`: https://www.osaka-u.ac.jp/assets/images/footer/logo.svg — The University of Osaka's official ginkgo mark.
 - `hust.png`: https://vi.hust.edu.cn/imgs/logo_inside_top.png — HUST visual identity website; only the emblem at the left is displayed.
