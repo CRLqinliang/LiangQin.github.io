@@ -129,3 +129,6 @@ a:focus-visible, button:focus-visible {
 .author__urls .organization-logo img { width: 17px; height: 17px; }
 .page__content .organization-logo img { margin: 0; }
 .organization-logo--osaka { background: #164c88; }
+.academic-home .research-card .research-credit { margin-top: 0.8rem; font-size: 0.65rem; line-height: 1.4; }
+.research-thumbnail img[src*="motion-planning-screen"] { object-fit: cover; object-position: right center; }
+.research-thumbnail img[src*="robot-learning-demo"] { object-fit: cover; }
