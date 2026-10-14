@@ -1,13 +1,10 @@
 # Featured manuscripts first, then publications. Shared by the homepage and CV.
-# The drag manuscript links to author-provided project notes until a formal URL is available.
+# Unpublished manuscripts omit URLs until the author makes them public.
 - title: "Connectivity-Driven Drag Trajectory Optimization via Energy-Based Soft Dynamic Programming"
   authors: "Liang Qin, Weiwei Wan, Jun Takahashi, Ryo Negishi, Masaki Matsushita, Kensuke Harada"
   status: "Manuscript"
   venue: "Manuscript · Publication details forthcoming"
-  paper_url: "https://chatgpt.com/share/6acdbe11-8a9c-83ee-8431-4ec12bcbbbbc"
-  paper_label: "Project notes"
   image: "/images/publications/drag-experiments.jpg"
-  figure_url: "/images/publications/drag-experiments.jpg"
   image_alt: "Simulation and real-robot execution sequences for drag trajectory refinement and repair."
   summary: "Connectivity-driven optimization of drag trajectories using energy-based soft dynamic programming."
 
