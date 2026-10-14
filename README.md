@@ -4,6 +4,7 @@ Personal academic website built with [Academic Pages](https://github.com/academi
 
 ## Editing the website
 
+- `_layouts/robotics.html`, `assets/css/robotics.css`, `assets/js/robotics.js`: the Robotics Research homepage and CV template.
 - `_pages/about.md`: homepage biography, research interests, publication, education, and experience.
 - `_data/publications.yml`: featured paper metadata, links, and thumbnails shared by homepage and CV. Add new entries at the top.
 - `images/publications/`: thumbnail assets and their source credits.
