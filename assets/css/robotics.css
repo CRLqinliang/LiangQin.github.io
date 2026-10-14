@@ -73,12 +73,12 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 .organization-logo { display: inline-flex; flex: 0 0 40px; width: 40px; height: 36px; align-items: center; justify-content: center; overflow: hidden; background: white; border-radius: 4px; }
 .organization-logo img { display: block; width: 30px; height: 30px; object-fit: contain; margin: 0; }
 .organization-logo--osaka { background: #164c88; }
-.organization-logo--hust { flex-basis: 48px; width: 48px; background: transparent; justify-content: flex-start; }
-.organization-logo--hust img { flex: none; width: auto; max-width: none; height: 36px; }
+.organization-logo--hust { flex-basis: 48px; width: 48px; background: #fff; }
+.organization-logo--hust img { width: 48px; height: 36px; object-fit: cover; }
 .organization-logo--xidian { justify-content: flex-start; }
 .organization-logo--xidian img { flex: none; width: auto; max-width: none; height: 35px; }
-.organization-logo--cobot { flex-basis: 62px; width: 62px; background: transparent; }
-.organization-logo--cobot img { width: 54px; height: 26px; }
+.organization-logo--cobot { flex-basis: 62px; width: 62px; background: #fff; }
+.organization-logo--cobot img { width: 54px; height: 32px; object-fit: cover; }
 .site-footer { width: min(100% - 64px, 1120px); margin: 36px auto; display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 12px; }
 .site-footer p { margin: 0; }
 .site-footer span { margin-left: 25px; }
@@ -123,8 +123,3 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print { .site-header, .site-footer, .back-link { display: none; } .document-content { width: 100%; padding: 0; } body { background: white; color: black; } }
-
-/* Official reverse-white marks: use the page's contrast without a colored tile. */
-.organization-logo--hust img, .organization-logo--cobot img { filter: brightness(0); }
-html[data-theme="dark"] .organization-logo--hust img,
-html[data-theme="dark"] .organization-logo--cobot img { filter: brightness(0) invert(1); }

@@ -4,7 +4,7 @@ osaka:
   url: "https://www.osaka-u.ac.jp/en"
 hust:
   name: "Huazhong University of Science and Technology"
-  logo: "/images/organizations/hust.png"
+  logo: "/images/organizations/hust.jpg"
   url: "https://www.hust.edu.cn/"
 xidian:
   name: "Xidian University"
@@ -16,5 +16,5 @@ huawei:
   url: "https://www.huawei.com/en/"
 cobot:
   name: "Cobot Technology"
-  logo: "/images/organizations/cobot.webp"
+  logo: "/images/organizations/cobot.jpg"
   url: "https://www.cobotsys.com/"
