@@ -118,11 +118,11 @@ a:focus-visible, button:focus-visible {
 .organization-logo { display: inline-flex; flex: 0 0 48px; width: 48px; height: 44px; align-items: center; justify-content: center; overflow: hidden; background: #fff; border-radius: 5px; }
 .organization-logo img { display: block; width: 38px; height: 38px; object-fit: contain; margin: 0; }
 /* Display only the emblem at the beginning of the official combined marks. */
-.organization-logo--hust { flex-basis: 56px; width: 56px; background: #17675e; justify-content: flex-start; }
+.organization-logo--hust { flex-basis: 56px; width: 56px; background: transparent; justify-content: flex-start; }
 .organization-logo--hust img { flex: none; width: auto; max-width: none; height: 42px; object-fit: initial; }
 .organization-logo--xidian { flex-basis: 46px; width: 46px; justify-content: flex-start; }
 .organization-logo--xidian img { flex: none; width: auto; max-width: none; height: 40px; object-fit: initial; }
-.organization-logo--cobot { flex-basis: 72px; width: 72px; background: #17675e; }
+.organization-logo--cobot { flex-basis: 72px; width: 72px; background: transparent; }
 .organization-logo--cobot img { width: 62px; height: 32px; }
 .author__urls .organization { gap: 0.35rem; }
 .author__urls .organization-logo { flex-basis: 20px; width: 20px; height: 20px; border-radius: 3px; }
@@ -132,3 +132,8 @@ a:focus-visible, button:focus-visible {
 .academic-home .research-card .research-credit { margin-top: 0.8rem; font-size: 0.65rem; line-height: 1.4; }
 .research-thumbnail img[src*="motion-planning-screen"] { object-fit: cover; object-position: right center; }
 .research-thumbnail img[src*="robot-learning-demo"] { object-fit: cover; }
+
+/* Official reverse-white marks: use the page's contrast without a colored tile. */
+.organization-logo--hust img, .organization-logo--cobot img { filter: brightness(0); }
+html[data-theme="dark"] .organization-logo--hust img,
+html[data-theme="dark"] .organization-logo--cobot img { filter: brightness(0) invert(1); }
