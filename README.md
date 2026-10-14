@@ -25,7 +25,7 @@ bundle install
 bundle exec jekyll serve --host 127.0.0.1
 ```
 
-Open `http://127.0.0.1:4000/LiangQin.github.io/`. The project uses `url: https://crlqinliang.github.io` and `baseurl: /LiangQin.github.io`; keep the base path when adding internal links. Restart Jekyll after changing `_config.yml`.
+Open `http://127.0.0.1:4000/`. The website is published at `https://crlqinliang.github.io/` with an empty `baseurl`; use the Jekyll `relative_url` filter for internal links. Restart Jekyll after changing `_config.yml`.
 
 After editing JavaScript sources, run `npm install` and `npm run build:js` to rebuild `assets/js/main.min.js`.
 
