@@ -39,7 +39,7 @@ Active impedance control, passive adaptive gripper design for peg-in-hole tasks,
 {% if publication.paper_url %}**[{{ publication.title }}]({{ publication.paper_url | relative_url }})**{% else %}**{{ publication.title }}**{% endif %}<br>
 {{ publication.authors }}<br>
 *{{ publication.venue }}.*<br>
-{% if publication.pdf_url %}[PDF]({{ publication.pdf_url | relative_url }}){% elsif publication.paper_url %}[{{ publication.paper_label }}]({{ publication.paper_url | relative_url }}){% endif %}{% if publication.preprint_url %} · [Author preprint]({{ publication.preprint_url }}){% endif %}
+{% if publication.pdf_url %}[PDF]({{ publication.pdf_url | relative_url }}){% elsif publication.paper_url %}[{{ publication.paper_label }}]({{ publication.paper_url | relative_url }}){% endif %}{% if publication.preprint_url %} · [Author preprint]({{ publication.preprint_url }}){% endif %}{% if publication.poster_url %} · [{{ publication.poster_label }}]({{ publication.poster_url | relative_url }}){% endif %}
 
 {% endfor %}
 ## Contact
