@@ -1,8 +1,9 @@
 ---
+layout: robotics
 permalink: /
 title: "Liang Qin"
 excerpt: "Research in robot learning and manipulation at the University of Osaka."
-author_profile: true
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
@@ -12,15 +13,25 @@ redirect_from:
 
 <div class="academic-home">
 <section id="about-me" class="home-section home-intro" aria-labelledby="about-heading">
-  <p class="home-eyebrow">Robot learning &amp; manipulation</p>
-  <h2 id="about-heading">About me</h2>
-  <p class="home-lead">I study how robots can learn to grasp, plan, and manipulate objects.</p>
-  <p>I am a Ph.D. candidate in <a href="https://www.roboticmanipulation.org/">Harada Lab</a> at the University of Osaka, supervised by <a href="https://wanweiwei07.github.io/">Prof. Weiwei Wan</a>. Previously, I was a Ph.D. student in the Robot Learning Group at <a href="http://www.rlg.sys.es.osaka-u.ac.jp/">Nagai Lab</a>, supervised by Prof. Takayuki Nagai.</p>
-  <p>I received my master's degree from Huazhong University of Science and Technology (HUST), where I worked with Prof. Wenyu Yang at the <a href="https://dmet.hust.edu.cn/index.htm">State Key Laboratory of Intelligent Manufacturing Equipment and Technology</a>. I received my bachelor's degree from Xidian University in 2018.</p>
-  <div class="home-actions">
-    <a class="home-button" href="{{ base_path }}/#publications">View publications</a>
-    <a class="home-button home-button--secondary" href="mailto:{{ site.author.email }}">Contact me</a>
+  <div class="hero-copy">
+    <p class="home-eyebrow">Robot learning &amp; manipulation</p>
+    <h1 id="about-heading">Liang Qin</h1>
+    <p class="hero-role">Ph.D. candidate · {% include organization.html key="osaka" %}</p>
+    <p class="home-lead">I study how robots can learn to grasp, plan, and manipulate objects.</p>
+    <p>I am a Ph.D. candidate in <a href="https://www.roboticmanipulation.org/">Harada Lab</a> at the University of Osaka, supervised by <a href="https://wanweiwei07.github.io/">Prof. Weiwei Wan</a>. Previously, I was a Ph.D. student in the Robot Learning Group at <a href="http://www.rlg.sys.es.osaka-u.ac.jp/">Nagai Lab</a>, supervised by Prof. Takayuki Nagai.</p>
+    <p>I received my master's degree from Huazhong University of Science and Technology (HUST), where I worked with Prof. Wenyu Yang at the <a href="https://dmet.hust.edu.cn/index.htm">State Key Laboratory of Intelligent Manufacturing Equipment and Technology</a>. I received my bachelor's degree from Xidian University in 2018.</p>
+    <div class="home-actions">
+      <a class="home-button" href="{{ '/#publications' | relative_url }}">Publications <span aria-hidden="true">↗</span></a>
+      <a href="mailto:{{ site.author.email }}">Email</a>
+      <a href="{{ site.author.orcid }}">ORCID</a>
+      <a href="https://github.com/{{ site.author.github }}">GitHub</a>
+      <a href="{{ '/cv/' | relative_url }}">CV</a>
+    </div>
   </div>
+  <figure class="hero-portrait">
+    <img src="{{ '/images/profile.jpg' | relative_url }}" alt="Liang Qin" width="360" height="420" decoding="async">
+    <figcaption>Osaka, Japan</figcaption>
+  </figure>
 </section>
 
 <section id="research" class="home-section" aria-labelledby="research-heading">
