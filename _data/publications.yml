@@ -29,6 +29,8 @@
   paper_label: "IEEE Xplore"
   pdf_url: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11316217"
   preprint_url: "https://arxiv.org/abs/2506.15920"
+  poster_url: "/files/icra-2026-planned-data-poster.pdf"
+  poster_label: "ICRA 2026 Poster"
   image: "/images/publications/planned-data.png"
   image_alt: "A shared grasp connecting the initial and goal object poses in a robotic pick-and-place task, from Figure 1."
   summary: "An energy-based model predicts shared grasps to reduce the search needed for robotic pick-and-place planning."
