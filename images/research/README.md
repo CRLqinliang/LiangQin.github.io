@@ -36,3 +36,9 @@ Retrieved 2026-10-14. Assets remain the property of their respective owners.
 - `tweezers-task-full.webp`: 3740×1711 original `image2.png`, lossless WebP encoding with identical decoded RGB pixels.
 - These supersede the 2400px delivery versions on the homepage. No upscaling or generated details.
 - The 163×122 multi-finger prototype is displayed at no more than its native width; the original source limits its detail.
+
+## AI-enhanced multi-finger images (2026-10-17)
+
+- `multi-finger-prototype-enhanced.png` (1451×1084) and `multi-finger-grasp-sequence-enhanced.png` (2181×721) were generated using the built-in imagegen tool, with the corresponding original photograph as the edit target.
+- Goal: improve visual clarity while preserving overall framing, gripper poses, components and panel order. Generated fine details are inferred and should not be used as mechanical measurements or evidence of exact construction.
+- Original 163×122 prototype and 765×206 sequence remain unchanged and are directly linked next to the enhanced images. The page visibly labels both generated restorations as AI-enhanced.

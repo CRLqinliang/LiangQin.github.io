@@ -158,7 +158,7 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 .gripper-project--tweezers > .gripper-demo { grid-column: 1; grid-row: 2; align-self: center; }
 .gripper-project--tweezers > .gripper-figures { grid-column: 2; grid-row: 2; width: min(100%, 290px); justify-self: end; align-self: center; }
 .gripper-project--multi { grid-template-columns: 210px minmax(0, 1fr); grid-template-rows: auto 1fr; align-content: normal; }
-.gripper-prototype { width: 163px; max-width: 100%; grid-column: 1; align-self: center; justify-self: center; }
+.gripper-prototype { width: 190px; max-width: 100%; grid-column: 1; align-self: center; justify-self: center; }
 .gripper-project--multi > .gripper-sequence { grid-column: 2; grid-row: 2; align-self: center; }
 .gripper-project--master-arm { grid-template-columns: 280px minmax(0, 1fr); align-items: center; }
 .master-arm-description { grid-column: 2; grid-row: 1; max-width: 55ch; }
