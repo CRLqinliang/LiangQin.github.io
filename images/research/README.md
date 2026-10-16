@@ -42,3 +42,7 @@ Retrieved 2026-10-14. Assets remain the property of their respective owners.
 - `multi-finger-prototype-enhanced.png` (1451×1084) and `multi-finger-grasp-sequence-enhanced.png` (2181×721) were generated using the built-in imagegen tool, with the corresponding original photograph as the edit target.
 - Goal: improve visual clarity while preserving overall framing, gripper poses, components and panel order. Generated fine details are inferred and should not be used as mechanical measurements or evidence of exact construction.
 - Original 163×122 prototype and 765×206 sequence remain unchanged and are directly linked next to the enhanced images. The page visibly labels both generated restorations as AI-enhanced.
+
+## AI-enhanced tube fixture figures (2026-10-17)
+
+The four `tube-*-enhanced.png` files were generated with the built-in imagegen tool using the corresponding original PNG as the edit target. They improve display legibility but may infer fine mechanical or photographic detail. Visible AI-enhanced captions and original-image links accompany all four. Unmodified original files remain available, and modal original-image links point to those originals.
