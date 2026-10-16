@@ -57,6 +57,10 @@
       previous.disabled = index === 0;
       next.disabled = index === cards.length - 1;
       position.textContent = `${index + 1} / ${cards.length}`;
+      // Size the gallery to the visible project, instead of the tallest hidden card.
+      const style = getComputedStyle(track);
+      const chrome = track.offsetHeight - track.clientHeight;
+      track.style.height = `${cards[index].offsetHeight + parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) + chrome}px`;
     };
     const move = direction => {
       const index = Math.max(0, Math.min(cards.length - 1, currentIndex() + direction));
@@ -75,6 +79,10 @@
       frame = requestAnimationFrame(update);
     }, { passive: true });
     window.addEventListener('resize', update);
+    if (typeof ResizeObserver === 'function') {
+      const observer = new ResizeObserver(update);
+      cards.forEach(card => observer.observe(card));
+    }
     navigation.hidden = false;
     update();
   }
