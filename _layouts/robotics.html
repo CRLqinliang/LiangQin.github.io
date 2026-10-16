@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% include seo.html %}
   <link rel="icon" type="image/svg+xml" href="{{ '/images/favicon.svg' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/robotics.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/robotics.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
   <script>try { if (localStorage.getItem('robotics-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
 </head>
 <body class="robotics-site">
