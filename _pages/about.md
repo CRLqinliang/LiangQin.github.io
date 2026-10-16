@@ -67,6 +67,24 @@ redirect_from:
             <figcaption>Grasping sequence <span aria-hidden="true">↗</span></figcaption>
           </figure>
         </section>
+        <section id="teleoperation-master-arm" class="gripper-project gripper-project--master-arm" aria-labelledby="master-arm-heading">
+          <div class="master-arm-description">
+            <h4 id="master-arm-heading">3D-printed teleoperation master arm</h4>
+            <p>A master arm for offset teleoperation, built with a fully 3D-printed, bearing-free mechanical structure.</p>
+            <ul class="master-arm-features">
+              <li><strong>Fabrication:</strong> fully 3D-printed mechanical structure, with no bearings.</li>
+              <li><strong>Joint sensing:</strong> electromagnetic angle encoders.</li>
+              <li><strong>Gravity compensation:</strong> constant-force springs.</li>
+            </ul>
+          </div>
+          <figure class="gripper-demo master-arm-demo">
+            <video controls muted playsinline preload="none" poster="{{ '/images/research/teleoperation-master-arm-poster.jpg' | relative_url }}" aria-label="Silent demonstration of a 3D-printed teleoperation master arm" width="720" height="1280">
+              <source src="{{ '/files/teleoperation-master-arm-demo.mp4' | relative_url }}" type="video/mp4">
+              Your browser does not support embedded video. <a href="{{ '/files/teleoperation-master-arm-demo.mp4' | relative_url }}">Download the demonstration</a>.
+            </video>
+            <figcaption>Master arm demonstration · <a href="{{ '/files/teleoperation-master-arm-demo.mp4' | relative_url }}">Open video</a></figcaption>
+          </figure>
+        </section>
       </div>
     </article>
     <article class="research-card"><div class="research-thumbnail"><img src="{{ '/images/research/motion-planning-screen.webp' | relative_url }}" alt="MoveIt RViz motion-planning interface with Panda robot poses." loading="lazy" decoding="async"></div><span class="research-number" aria-hidden="true">02</span><h3>Grasp &amp; motion planning</h3><p>Grasp pose generation and robot motion generation.</p><p class="research-credit">Screenshot: <a href="https://moveit.ai/">MoveIt</a></p></article>

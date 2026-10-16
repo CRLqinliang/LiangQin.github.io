@@ -18,3 +18,9 @@ Retrieved 2026-10-14. Assets remain the property of their respective owners.
 - These replace the third-party Robotiq example in the Gripper design entry.
 
 - `multi-finger-prototype.png` and `multi-finger-grasp-sequence.jpg`: author-provided prototype and grasping sequence images, preserved unchanged.
+
+## Teleoperation master arm
+
+- `teleoperation-master-arm-poster.jpg`: frame at 2 seconds from the author-provided master-arm demonstration.
+- `/files/teleoperation-master-arm-demo.mp4`: author-provided 12.5-second demonstration; encoded video preserved, all audio removed, fast-start MP4.
+- Technical description supplied by the author: fully 3D-printed bearing-free mechanical structure, electromagnetic angle encoders, constant-force springs for gravity compensation, and a master arm for offset teleoperation.
