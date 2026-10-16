@@ -38,9 +38,16 @@ redirect_from:
   <h2 id="research-heading">Research interests</h2>
   <div class="research-grid research-grid--projects">
     <article class="research-card research-card--gripper" aria-labelledby="gripper-heading">
-      <span class="research-number" aria-hidden="true">01</span><h3 id="gripper-heading">Gripper design</h3>
-      <div class="gripper-projects">
-        <section class="gripper-project" aria-labelledby="tweezers-heading">
+      <div class="gripper-section-heading">
+        <h3 id="gripper-heading">Gripper design</h3>
+        <div class="gripper-navigation" hidden>
+          <button type="button" class="gripper-previous" aria-label="Previous gripper project" aria-controls="gripper-projects">←</button>
+          <span class="gripper-position" aria-live="polite" aria-atomic="true">1 / 3</span>
+          <button type="button" class="gripper-next" aria-label="Next gripper project" aria-controls="gripper-projects">→</button>
+        </div>
+      </div>
+      <div id="gripper-projects" class="gripper-projects" role="region" aria-label="Gripper design projects" tabindex="0">
+        <section class="gripper-project gripper-project--tweezers" aria-labelledby="tweezers-heading">
           <h4 id="tweezers-heading">Tweezers gripper</h4>
           <p>A motor-driven tweezers gripper with interchangeable, 3D-printed adapters for small-object manipulation.</p>
           <figure class="gripper-demo">
@@ -55,7 +62,7 @@ redirect_from:
             <figure><a href="{{ '/images/research/tweezers-design.webp' | relative_url }}" aria-label="View full tweezers gripper design diagram"><img src="{{ '/images/research/tweezers-design.webp' | relative_url }}" alt="Motor, drive gears, tweezers adapters and parallel pressing mechanism of the gripper." loading="lazy" decoding="async" width="2400" height="1199"></a><figcaption>Mechanism &amp; design <span aria-hidden="true">↗</span></figcaption></figure>
           </div>
         </section>
-        <section class="gripper-project" aria-labelledby="multi-finger-heading">
+        <section class="gripper-project gripper-project--multi" aria-labelledby="multi-finger-heading">
           <h4 id="multi-finger-heading">Multi-finger gripper</h4>
           <p>A gripper prototype and a sequence showing the fingers closing around a cylindrical object.</p>
           <figure class="gripper-prototype">

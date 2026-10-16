@@ -124,30 +124,60 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print { .site-header, .site-footer, .back-link { display: none; } .document-content { width: 100%; padding: 0; } body { background: white; color: black; } }
 
-/* Gripper projects are independent cards with native media controls. */
+/* Wide, horizontally scrollable gripper project cards. */
 .research-grid--projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.research-card--gripper { grid-column: 1 / -1; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
-.gripper-projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 20px; }
-.gripper-project { min-width: 0; border: 1px solid var(--line); border-radius: 6px; padding: 20px; background: var(--surface); }
-.gripper-project h4 { margin: 0 0 10px; font-size: 18px; line-height: 1.4; }
-.gripper-project > p { min-height: 4.8em; margin-bottom: 18px; }
-.gripper-figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 20px; }
+.research-card--gripper { grid-column: 1 / -1; min-width: 0; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
+.gripper-section-heading { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 18px; }
+.gripper-section-heading h3 { margin: 0; padding: 0; }
+.gripper-navigation { display: flex; align-items: center; gap: 12px; }
+.gripper-navigation[hidden] { display: none; }
+.gripper-navigation button { width: 36px; height: 34px; border: 1px solid var(--line); border-radius: 4px; color: var(--text); background: var(--bg); cursor: pointer; }
+.gripper-navigation button:disabled { opacity: .35; cursor: default; }
+.gripper-position { min-width: 38px; text-align: center; color: var(--muted); font-size: 12px; }
+.gripper-projects { display: grid; grid-auto-flow: column; grid-auto-columns: min(880px, calc(100% - 48px)); gap: 24px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; padding-bottom: 16px; scrollbar-width: auto; scrollbar-color: var(--muted) var(--surface); }
+.gripper-projects::-webkit-scrollbar { height: 12px; }
+.gripper-projects::-webkit-scrollbar-track { background: var(--surface); border-radius: 6px; }
+.gripper-projects::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 6px; border: 3px solid var(--surface); }
+.gripper-projects:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.gripper-project { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px 24px; align-content: start; min-width: 0; border: 1px solid var(--line); border-radius: 6px; padding: 24px; background: var(--surface); scroll-snap-align: start; }
+.gripper-project > h4 { grid-column: 1 / -1; }
+.gripper-project h4 { margin: 0; font-size: 18px; line-height: 1.4; }
+.gripper-project > p { grid-column: 1; margin: 0; }
+.gripper-figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 .gripper-project figure { min-width: 0; margin: 0; }
 .gripper-project figure > a { display: block; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: white; }
 .gripper-project figure img { display: block; width: 100%; height: auto; object-fit: contain; }
 .gripper-figures img { aspect-ratio: 2 / 1; }
 .gripper-project figcaption { margin-top: 8px; color: var(--muted); font-size: 11px; line-height: 1.6; }
 .gripper-demo video { display: block; width: 100%; height: auto; aspect-ratio: 568 / 320; background: #111; border: 1px solid var(--line); border-radius: 5px; }
-.gripper-prototype { width: 162px; max-width: 100%; }
-.gripper-sequence { padding-top: 24px; }
-@media (max-width: 640px) { .research-grid--projects, .gripper-projects { grid-template-columns: 1fr; } .gripper-project > p { min-height: 0; } .gripper-project { padding: 16px; } }
-
-/* The master-arm project shares the same row as the other gripper cards. */
-.gripper-project--master-arm { grid-column: auto; }
+.gripper-project--tweezers > .gripper-demo { grid-column: 2; grid-row: 2 / span 2; }
+.gripper-project--tweezers > .gripper-figures { grid-column: 1; }
+.gripper-prototype { width: 162px; max-width: 100%; grid-column: 1; }
+.gripper-project--multi > .gripper-sequence { grid-column: 2; grid-row: 2 / span 2; align-self: center; }
+.gripper-project--master-arm { grid-template-columns: minmax(0, 1fr) 190px; align-items: center; }
+.master-arm-description h4 { margin-bottom: 14px; }
 .master-arm-description p, .master-arm-features { color: var(--muted); font-size: 14px; line-height: 1.7; }
-.master-arm-features { padding-left: 20px; margin: 20px 0 0; }
-.master-arm-features li { margin-bottom: 10px; }
+.master-arm-features { padding-left: 20px; margin: 18px 0 0; }
+.master-arm-features li { margin-bottom: 8px; }
 .master-arm-features strong { color: var(--text); }
-.gripper-project .master-arm-demo { width: 180px; max-width: 100%; margin: 20px auto 0; }
+.gripper-project .master-arm-demo { width: 158px; max-width: 100%; justify-self: center; }
 .master-arm-demo video { aspect-ratio: 9 / 16; }
-@media (max-width: 900px) { .gripper-projects { grid-template-columns: 1fr; } .gripper-project > p { min-height: 0; } }
+/* Native modal preview keeps readers on the homepage with a clear way back. */
+.image-viewer { width: min(1200px, calc(100% - 32px)); max-width: none; max-height: calc(100dvh - 32px); border: 1px solid var(--line); border-radius: 8px; padding: 20px; color: var(--text); background: var(--bg); }
+.image-viewer::backdrop { background: rgba(0,0,0,.76); }
+.image-viewer-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 14px; }
+.image-viewer-toolbar h2 { margin: 0; font-size: 18px; }
+.image-viewer-toolbar form { margin: 0; }
+.image-viewer-close { border: 1px solid var(--line); border-radius: 4px; padding: 6px 14px; background: var(--surface); color: var(--text); cursor: pointer; }
+.image-viewer-figure { margin: 0; }
+.image-viewer-image { display: block; width: 100%; max-height: calc(100dvh - 190px); height: auto; object-fit: contain; background: white; }
+.image-viewer-caption { margin: 10px 0; color: var(--muted); font-size: 12px; }
+.image-viewer-original { font-size: 12px; }
+@media (max-width: 640px) {
+ .research-grid--projects { grid-template-columns: 1fr; }
+ .gripper-projects { grid-auto-columns: calc(100% - 24px); gap: 14px; }
+ .gripper-project { grid-template-columns: 1fr; padding: 16px; gap: 16px; }
+ .gripper-project > h4, .gripper-project > p, .gripper-project--tweezers > .gripper-demo, .gripper-project--tweezers > .gripper-figures, .gripper-prototype, .gripper-project--multi > .gripper-sequence { grid-column: 1; grid-row: auto; }
+ .gripper-project .master-arm-demo { width: 140px; }
+ .image-viewer { padding: 12px; }
+}
