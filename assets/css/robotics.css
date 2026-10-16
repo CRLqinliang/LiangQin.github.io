@@ -181,3 +181,5 @@ h3 { font-size: 19px; margin: 0 0 8px; }
  .gripper-project .master-arm-demo { width: 140px; }
  .image-viewer { padding: 12px; }
 }
+
+body:has(.image-viewer[open]) { overflow: hidden; }
