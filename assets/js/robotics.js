@@ -18,7 +18,6 @@
     const caption = viewer.querySelector('.image-viewer-caption');
     const original = viewer.querySelector('.image-viewer-original');
     let opener;
-    let previousOverflow;
     document.addEventListener('click', event => {
       const link = event.target.closest('a[href]');
       if (!link || !link.querySelector('img') || !/\.(png|jpe?g|webp|gif|svg)(?:[?#]|$)/i.test(link.href)) return;
@@ -29,15 +28,13 @@
       image.alt = link.querySelector('img').alt;
       caption.textContent = image.alt;
       original.href = link.href;
-      previousOverflow = document.body.style.overflow;
-      document.body.style.overflow = 'hidden';
       viewer.showModal();
     });
     viewer.addEventListener('click', event => {
       if (event.target === viewer) viewer.close();
     });
     viewer.addEventListener('close', () => {
-      document.body.style.overflow = previousOverflow || '';
+      if (viewer.open) return;
       image.removeAttribute('src');
       if (opener) opener.focus({ preventScroll: true });
     });
