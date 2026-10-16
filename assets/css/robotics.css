@@ -169,6 +169,12 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 .master-arm-features strong { color: var(--text); }
 .gripper-project .master-arm-demo { grid-column: 1; grid-row: 1; width: 216px; max-width: 100%; justify-self: center; }
 .master-arm-demo video { aspect-ratio: 9 / 16; }
+.gripper-project--tube-fixture { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.tube-fixture-features { align-self: center; margin: 0; padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+.tube-fixture-features li + li { margin-top: 14px; }
+.tube-fixture-features strong { color: var(--text); }
+.tube-fixture-media { min-width: 0; align-self: center; display: grid; gap: 14px; }
+.tube-fixture-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; align-items: start; }
 /* Native modal preview keeps readers on the homepage with a clear way back. */
 .image-viewer { width: fit-content; max-width: min(1200px, calc(100% - 32px)); max-height: calc(100dvh - 32px); border: 1px solid var(--line); border-radius: 8px; padding: 20px; color: var(--text); background: var(--bg); }
 .image-viewer::backdrop { background: rgba(0,0,0,.76); }
@@ -190,6 +196,7 @@ h3 { font-size: 19px; margin: 0 0 8px; }
  .gripper-project--multi { grid-template-rows: auto; }
  .master-arm-description, .gripper-project .master-arm-demo { grid-column: 1; grid-row: auto; }
  .gripper-project .master-arm-demo { width: 180px; }
+ .gripper-project--tube-fixture { grid-template-columns: 1fr; }
  .image-viewer { padding: 12px; }
 }
 

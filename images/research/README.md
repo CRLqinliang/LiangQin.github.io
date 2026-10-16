@@ -24,3 +24,8 @@ Retrieved 2026-10-14. Assets remain the property of their respective owners.
 - `teleoperation-master-arm-poster.jpg`: frame at 2 seconds from the author-provided master-arm demonstration.
 - `/files/teleoperation-master-arm-demo.mp4`: author-provided 12.5-second demonstration; encoded video preserved, all audio removed, fast-start MP4.
 - Technical description supplied by the author: fully 3D-printed bearing-free mechanical structure, electromagnetic angle encoders, constant-force springs for gravity compensation, and a master arm for offset teleoperation.
+
+## Thin-wall tube laser-cutting fixture
+
+- `tube-fixture-prototype.png`, `tube-fixture-cad.png`, `tube-fixture-drive-chuck.png`, and `tube-laser-cutting-context.png`: author-supplied images, copied unchanged on 2026-10-16.
+- Description supplied by the author: repeated feeding reduces guide-rail length for long tubes; an eight-roller support chuck and compliant-contact drive chuck use optimized stiffness distribution to reduce circumferential runout at the cutting location.
