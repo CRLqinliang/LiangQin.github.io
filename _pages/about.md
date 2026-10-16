@@ -42,7 +42,7 @@ redirect_from:
         <h3 id="gripper-heading">Gripper design</h3>
         <div class="gripper-navigation" hidden>
           <button type="button" class="gripper-previous" aria-label="Previous gripper project" aria-controls="gripper-projects">←</button>
-          <span class="gripper-position" aria-live="polite" aria-atomic="true">1 / 3</span>
+          <span class="gripper-position" aria-live="polite" aria-atomic="true">1 / 4</span>
           <button type="button" class="gripper-next" aria-label="Next gripper project" aria-controls="gripper-projects">→</button>
         </div>
       </div>
@@ -95,6 +95,28 @@ redirect_from:
             </video>
             <figcaption>Master arm demonstration · <a href="{{ '/files/teleoperation-master-arm-demo.mp4' | relative_url }}">Open video</a></figcaption>
           </figure>
+        </section>
+        <section id="tube-cutting-fixture" class="gripper-project gripper-project--tube-fixture" aria-labelledby="tube-fixture-heading">
+          <div class="gripper-intro">
+            <h4 id="tube-fixture-heading">Thin-wall tube laser-cutting fixture</h4>
+            <p>Fixture prototype for a compact laser-cutting machine for thin-walled tubes.</p>
+          </div>
+          <ul class="tube-fixture-features">
+            <li><strong>Repeated feeding:</strong> process long tubes through multiple feed cycles to reduce the required guide-rail length.</li>
+            <li><strong>Chuck design:</strong> combine an eight-roller support chuck with a compliant-contact drive chuck.</li>
+            <li><strong>Stiffness distribution:</strong> optimize the support and drive arrangement to reduce circumferential runout at the laser-cutting location.</li>
+          </ul>
+          <div class="tube-fixture-media">
+            <figure>
+              <a href="{{ '/images/research/tube-fixture-prototype.png' | relative_url }}" aria-label="View full tube-cutting fixture prototype"><img src="{{ '/images/research/tube-fixture-prototype.png' | relative_url }}" alt="Fixture prototype with support and drive chucks, auxiliary fingers, and a digital micrometer." width="1250" height="541" loading="lazy" decoding="async"></a>
+              <figcaption>Fixture prototype <span aria-hidden="true">↗</span></figcaption>
+            </figure>
+            <div class="tube-fixture-gallery">
+              <figure><a href="{{ '/images/research/tube-fixture-cad.png' | relative_url }}" aria-label="View full tube fixture CAD model"><img src="{{ '/images/research/tube-fixture-cad.png' | relative_url }}" alt="CAD model of the support chuck, auxiliary support mechanism, and drive chuck." width="1224" height="559" loading="lazy" decoding="async"></a><figcaption>CAD assembly <span aria-hidden="true">↗</span></figcaption></figure>
+              <figure><a href="{{ '/images/research/tube-fixture-drive-chuck.png' | relative_url }}" aria-label="View full tube fixture drive chuck"><img src="{{ '/images/research/tube-fixture-drive-chuck.png' | relative_url }}" alt="Drive chuck prototype showing the direct-drive motor, slip ring, force sensor, and screw-driven stepper mechanism." width="1096" height="650" loading="lazy" decoding="async"></a><figcaption>Drive chuck <span aria-hidden="true">↗</span></figcaption></figure>
+              <figure><a href="{{ '/images/research/tube-laser-cutting-context.png' | relative_url }}" aria-label="View full tube laser-cutting illustration"><img src="{{ '/images/research/tube-laser-cutting-context.png' | relative_url }}" alt="Tube laser-cutting application and diagrams of laser melting and material removal." width="1130" height="460" loading="lazy" decoding="async"></a><figcaption>Cutting context <span aria-hidden="true">↗</span></figcaption></figure>
+            </div>
+          </div>
         </section>
       </div>
     </article>
