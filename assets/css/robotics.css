@@ -141,3 +141,13 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 .gripper-prototype { width: 162px; max-width: 100%; }
 .gripper-sequence { padding-top: 24px; }
 @media (max-width: 640px) { .research-grid--projects, .gripper-projects { grid-template-columns: 1fr; } .gripper-project > p { min-height: 0; } .gripper-project { padding: 16px; } }
+
+/* A portrait demonstration stays compact beside the master-arm design notes. */
+.gripper-project--master-arm { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 32px; align-items: center; }
+.master-arm-description p, .master-arm-features { color: var(--muted); font-size: 14px; line-height: 1.7; }
+.master-arm-features { padding-left: 20px; margin: 20px 0 0; }
+.master-arm-features li { margin-bottom: 10px; }
+.master-arm-features strong { color: var(--text); }
+.gripper-project .master-arm-demo { width: 236px; max-width: 100%; justify-self: center; }
+.master-arm-demo video { aspect-ratio: 9 / 16; }
+@media (max-width: 640px) { .gripper-project--master-arm { grid-template-columns: 1fr; gap: 20px; } }
