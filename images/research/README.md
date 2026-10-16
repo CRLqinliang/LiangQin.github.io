@@ -14,5 +14,7 @@ Retrieved 2026-10-14. Assets remain the property of their respective owners.
 - `tweezers-task.webp`: author-provided `image2.png`, small-part measurement task and robot reorientation setup.
 - Both figures are resized to at most 2400 pixels and encoded as WebP for web delivery; their content is unchanged.
 - `tweezers-demo-poster.jpg`: frame at 3 seconds from the author-provided gripper video.
-- `/files/tweezers-gripper-demo.mp4`: author-provided demonstration, remuxed losslessly with fast-start metadata for browser playback.
+- `/files/tweezers-gripper-demo.mp4`: author-provided demonstration, video stream copied losslessly with all audio tracks removed and fast-start metadata for browser playback.
 - These replace the third-party Robotiq example in the Gripper design entry.
+
+- `multi-finger-prototype.png` and `multi-finger-grasp-sequence.jpg`: author-provided prototype and grasping sequence images, preserved unchanged.
