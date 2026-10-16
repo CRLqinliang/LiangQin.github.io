@@ -29,7 +29,7 @@ redirect_from:
     </div>
   </div>
   <figure class="hero-portrait">
-    <img src="{{ '/images/profile.jpg' | relative_url }}" alt="Liang Qin" width="360" height="420" decoding="async">
+    <img src="{{ '/images/profile.jpg' | relative_url }}" alt="Liang Qin" width="751" height="796" decoding="async">
     <figcaption>Osaka, Japan</figcaption>
   </figure>
 </section>
@@ -98,8 +98,8 @@ redirect_from:
         </section>
       </div>
     </article>
-    <article class="research-card"><div class="research-thumbnail"><img src="{{ '/images/research/motion-planning-screen.webp' | relative_url }}" alt="MoveIt RViz motion-planning interface with Panda robot poses." loading="lazy" decoding="async"></div><span class="research-number" aria-hidden="true">02</span><h3>Grasp &amp; motion planning</h3><p>Grasp pose generation and robot motion generation.</p><p class="research-credit">Screenshot: <a href="https://moveit.ai/">MoveIt</a></p></article>
-    <article class="research-card"><div class="research-thumbnail"><img src="{{ '/images/research/robot-learning-demo.webp' | relative_url }}" alt="Real robot manipulating a mug in the Diffusion Policy demonstration." loading="lazy" decoding="async"></div><span class="research-number" aria-hidden="true">03</span><h3>Robot learning</h3><p>Learning-based approaches to robotic manipulation.</p><p class="research-credit">Demo: <a href="https://diffusion-policy.cs.columbia.edu/">Diffusion Policy</a></p></article>
+    <article class="research-card research-card--topic"><div class="research-thumbnail"><img src="{{ '/images/research/motion-planning-screen.webp' | relative_url }}" alt="MoveIt RViz motion-planning interface with Panda robot poses." width="800" height="436" loading="lazy" decoding="async"></div><div class="research-topic-copy"><h3>Grasp &amp; motion planning</h3><p>Grasp pose generation and robot motion generation.</p><p class="research-credit">Screenshot: <a href="https://moveit.ai/">MoveIt</a></p></div></article>
+    <article class="research-card research-card--topic"><div class="research-thumbnail"><img src="{{ '/images/research/robot-learning-demo.webp' | relative_url }}" alt="Real robot manipulating a mug in the Diffusion Policy demonstration." width="800" height="533" loading="lazy" decoding="async"></div><div class="research-topic-copy"><h3>Robot learning</h3><p>Learning-based approaches to robotic manipulation.</p><p class="research-credit">Demo: <a href="https://diffusion-policy.cs.columbia.edu/">Diffusion Policy</a></p></div></article>
   </div>
 </section>
 
