@@ -70,12 +70,12 @@ redirect_from:
           <p>A gripper prototype and a sequence showing the fingers closing around a cylindrical object.</p>
           </div>
           <figure class="gripper-prototype">
-            <a href="{{ '/images/research/multi-finger-prototype.png' | relative_url }}" aria-label="View full multi-finger gripper prototype photo"><img src="{{ '/images/research/multi-finger-prototype.png' | relative_url }}" alt="Gripper prototype with its motors, wiring and articulated fingers." loading="lazy" decoding="async"></a>
-            <figcaption>Gripper prototype <span aria-hidden="true">↗</span></figcaption>
+            <a href="{{ '/images/research/multi-finger-prototype-enhanced.png' | relative_url }}" data-original-href="{{ '/images/research/multi-finger-prototype.png' | relative_url }}" aria-label="View full AI-enhanced multi-finger gripper prototype photo"><img src="{{ '/images/research/multi-finger-prototype-enhanced.png' | relative_url }}" alt="AI-enhanced gripper prototype with its motors, wiring and articulated fingers." width="1451" height="1084" loading="lazy" decoding="async"></a>
+            <figcaption>Gripper prototype · AI-enhanced<br><a href="{{ '/images/research/multi-finger-prototype.png' | relative_url }}" target="_blank" rel="noopener">Original photo ↗</a></figcaption>
           </figure>
           <figure class="gripper-sequence">
-            <a href="{{ '/images/research/multi-finger-grasp-sequence.jpg' | relative_url }}" aria-label="View full multi-finger grasping sequence"><img src="{{ '/images/research/multi-finger-grasp-sequence.jpg' | relative_url }}" alt="Five successive views of the articulated gripper closing around a cylindrical object." loading="lazy" decoding="async" width="765" height="206"></a>
-            <figcaption>Grasping sequence <span aria-hidden="true">↗</span></figcaption>
+            <a href="{{ '/images/research/multi-finger-grasp-sequence-enhanced.png' | relative_url }}" data-original-href="{{ '/images/research/multi-finger-grasp-sequence.jpg' | relative_url }}" aria-label="View full AI-enhanced multi-finger grasping sequence"><img src="{{ '/images/research/multi-finger-grasp-sequence-enhanced.png' | relative_url }}" alt="AI-enhanced sequence of five views of the articulated gripper closing around a cylindrical object." loading="lazy" decoding="async" width="2181" height="721"></a>
+            <figcaption>Grasping sequence · AI-enhanced<br><a href="{{ '/images/research/multi-finger-grasp-sequence.jpg' | relative_url }}" target="_blank" rel="noopener">Original sequence ↗</a></figcaption>
           </figure>
         </section>
         <section id="teleoperation-master-arm" class="gripper-project gripper-project--master-arm" aria-labelledby="master-arm-heading">

@@ -43,7 +43,7 @@
       image.src = link.href;
       image.alt = link.querySelector('img').alt;
       caption.textContent = image.alt;
-      original.href = link.href;
+      original.href = link.dataset.originalHref || link.href;
       viewer.showModal();
     });
     viewer.addEventListener('click', event => {
