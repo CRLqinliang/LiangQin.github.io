@@ -127,7 +127,7 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 /* Gripper projects are independent cards with native media controls. */
 .research-grid--projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .research-card--gripper { grid-column: 1 / -1; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
-.gripper-projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 20px; }
+.gripper-projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 20px; }
 .gripper-project { min-width: 0; border: 1px solid var(--line); border-radius: 6px; padding: 20px; background: var(--surface); }
 .gripper-project h4 { margin: 0 0 10px; font-size: 18px; line-height: 1.4; }
 .gripper-project > p { min-height: 4.8em; margin-bottom: 18px; }
@@ -142,12 +142,12 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 .gripper-sequence { padding-top: 24px; }
 @media (max-width: 640px) { .research-grid--projects, .gripper-projects { grid-template-columns: 1fr; } .gripper-project > p { min-height: 0; } .gripper-project { padding: 16px; } }
 
-/* A portrait demonstration stays compact beside the master-arm design notes. */
-.gripper-project--master-arm { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 32px; align-items: center; }
+/* The master-arm project shares the same row as the other gripper cards. */
+.gripper-project--master-arm { grid-column: auto; }
 .master-arm-description p, .master-arm-features { color: var(--muted); font-size: 14px; line-height: 1.7; }
 .master-arm-features { padding-left: 20px; margin: 20px 0 0; }
 .master-arm-features li { margin-bottom: 10px; }
 .master-arm-features strong { color: var(--text); }
-.gripper-project .master-arm-demo { width: 236px; max-width: 100%; justify-self: center; }
+.gripper-project .master-arm-demo { width: 180px; max-width: 100%; margin: 20px auto 0; }
 .master-arm-demo video { aspect-ratio: 9 / 16; }
-@media (max-width: 640px) { .gripper-project--master-arm { grid-template-columns: 1fr; gap: 20px; } }
+@media (max-width: 900px) { .gripper-projects { grid-template-columns: 1fr; } .gripper-project > p { min-height: 0; } }
