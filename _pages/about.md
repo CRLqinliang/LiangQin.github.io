@@ -48,8 +48,10 @@ redirect_from:
       </div>
       <div id="gripper-projects" class="gripper-projects" role="region" aria-label="Gripper design projects" tabindex="0">
         <section class="gripper-project gripper-project--tweezers" aria-labelledby="tweezers-heading">
+          <div class="gripper-intro">
           <h4 id="tweezers-heading">Tweezers gripper</h4>
           <p>A motor-driven tweezers gripper with interchangeable, 3D-printed adapters for small-object manipulation.</p>
+          </div>
           <figure class="gripper-demo">
             <video controls muted playsinline preload="none" poster="{{ '/images/research/tweezers-demo-poster.jpg' | relative_url }}" aria-label="Silent demonstration of the tweezers gripper manipulating a small metal part" width="568" height="320">
               <source src="{{ '/files/tweezers-gripper-demo.mp4' | relative_url }}" type="video/mp4">
@@ -63,8 +65,10 @@ redirect_from:
           </div>
         </section>
         <section class="gripper-project gripper-project--multi" aria-labelledby="multi-finger-heading">
+          <div class="gripper-intro">
           <h4 id="multi-finger-heading">Multi-finger gripper</h4>
           <p>A gripper prototype and a sequence showing the fingers closing around a cylindrical object.</p>
+          </div>
           <figure class="gripper-prototype">
             <a href="{{ '/images/research/multi-finger-prototype.png' | relative_url }}" aria-label="View full multi-finger gripper prototype photo"><img src="{{ '/images/research/multi-finger-prototype.png' | relative_url }}" alt="Gripper prototype with its motors, wiring and articulated fingers." loading="lazy" decoding="async"></a>
             <figcaption>Gripper prototype <span aria-hidden="true">↗</span></figcaption>

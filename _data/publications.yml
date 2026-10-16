@@ -5,6 +5,8 @@
   status: "Manuscript"
   venue: "Manuscript · Publication details forthcoming"
   image: "/images/publications/drag-experiments.jpg"
+  image_width: 3840
+  image_height: 1444
   image_alt: "Simulation and real-robot execution sequences for drag trajectory refinement and repair."
   summary: "Connectivity-driven optimization of drag trajectories using energy-based soft dynamic programming."
 
@@ -18,6 +20,8 @@
   pdf_url: "https://arxiv.org/pdf/2604.14733"
   video_url: "https://www.youtube.com/watch?v=_QvLvSbO_sM"
   image: "/images/publications/regrasp-connectivity.png"
+  image_width: 830
+  image_height: 614
   image_alt: "Robot regrasp sequence and differentiable pose connectivity landscapes from Figure 1."
   summary: "Differentiable connectivity metrics guide intermediate object poses and optimize the number of regrasp steps."
 
@@ -34,6 +38,8 @@
   poster_url: "/files/icra-2026-planned-data-poster.pdf"
   poster_label: "ICRA 2026 Poster"
   image: "/images/publications/planned-data.png"
+  image_width: 826
+  image_height: 490
   image_alt: "A shared grasp connecting the initial and goal object poses in a robotic pick-and-place task, from Figure 1."
   summary: "An energy-based model predicts shared grasps to reduce the search needed for robotic pick-and-place planning."
 
@@ -46,5 +52,7 @@
   paper_label: "PDF"
   pdf_url: "/files/icra-2023-causal-subgoals.pdf"
   image: "/images/publications/causal-subgoals.png"
+  image_width: 704
+  image_height: 540
   image_alt: "Causal sub-goal extraction from a bottleneck world model and transfer to a target agent, from Figure 1."
   summary: "Counterfactual analysis of a learned world model extracts interpretable sub-goals to guide reinforcement learning in new environments."
