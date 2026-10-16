@@ -158,7 +158,7 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 .gripper-project--tweezers > .gripper-demo { grid-column: 1; grid-row: 2; align-self: center; }
 .gripper-project--tweezers > .gripper-figures { grid-column: 2; grid-row: 2; width: min(100%, 290px); justify-self: end; align-self: center; }
 .gripper-project--multi { grid-template-columns: 210px minmax(0, 1fr); grid-template-rows: auto 1fr; align-content: normal; }
-.gripper-prototype { width: 190px; max-width: 100%; grid-column: 1; align-self: center; justify-self: center; }
+.gripper-prototype { width: 163px; max-width: 100%; grid-column: 1; align-self: center; justify-self: center; }
 .gripper-project--multi > .gripper-sequence { grid-column: 2; grid-row: 2; align-self: center; }
 .gripper-project--master-arm { grid-template-columns: 280px minmax(0, 1fr); align-items: center; }
 .master-arm-description { grid-column: 2; grid-row: 1; max-width: 55ch; }
@@ -181,9 +181,15 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 .image-viewer-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 14px; }
 .image-viewer-toolbar h2 { margin: 0; font-size: 18px; }
 .image-viewer-toolbar form { margin: 0; }
-.image-viewer-close { border: 1px solid var(--line); border-radius: 4px; padding: 6px 14px; background: var(--surface); color: var(--text); cursor: pointer; }
+.image-viewer-close, .image-viewer-zoom { border: 1px solid var(--line); border-radius: 4px; padding: 6px 14px; background: var(--surface); color: var(--text); cursor: pointer; }
+.image-viewer-controls { display: flex; align-items: center; gap: 10px; }
+.image-viewer-zoom[hidden] { display: none; }
+.image-viewer-canvas { max-height: calc(100dvh - 220px); overflow: auto; }
+.image-viewer-canvas:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.image-viewer--actual { width: min(1200px, calc(100% - 32px)); }
+.image-viewer--actual .image-viewer-image { max-width: none; max-height: none; }
 .image-viewer-figure { margin: 0; }
-.image-viewer-image { display: block; width: auto; max-width: min(1120px, calc(100vw - 76px)); max-height: calc(100dvh - 190px); height: auto; margin-inline: auto; object-fit: contain; }
+.image-viewer-image { display: block; width: auto; max-width: min(1120px, calc(100vw - 76px)); max-height: calc(100dvh - 220px); height: auto; margin-inline: auto; object-fit: contain; }
 .image-viewer-caption { max-width: 80ch; margin: 10px 0; color: var(--muted); font-size: 12px; }
 .image-viewer-original { font-size: 12px; }
 @media (max-width: 640px) {
@@ -198,6 +204,10 @@ h3 { font-size: 19px; margin: 0 0 8px; }
  .gripper-project .master-arm-demo { width: 180px; }
  .gripper-project--tube-fixture { grid-template-columns: 1fr; }
  .image-viewer { padding: 12px; }
+ .image-viewer-toolbar { gap: 10px; }
+ .image-viewer-toolbar h2 { font-size: 15px; }
+ .image-viewer-controls { gap: 6px; }
+ .image-viewer-close, .image-viewer-zoom { padding: 6px 8px; font-size: 12px; }
 }
 
 body:has(.image-viewer[open]) { overflow: hidden; }

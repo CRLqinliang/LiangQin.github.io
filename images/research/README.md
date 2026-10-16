@@ -29,3 +29,10 @@ Retrieved 2026-10-14. Assets remain the property of their respective owners.
 
 - `tube-fixture-prototype.png`, `tube-fixture-cad.png`, `tube-fixture-drive-chuck.png`, and `tube-laser-cutting-context.png`: author-supplied images, copied unchanged on 2026-10-16.
 - Description supplied by the author: repeated feeding reduces guide-rail length for long tubes; an eight-roller support chuck and compliant-contact drive chuck use optimized stiffness distribution to reduce circumferential runout at the cutting location.
+
+## Full-resolution gripper diagrams
+
+- `tweezers-design-full.webp`: 3054×1526 original `image7.png`, lossless WebP encoding with identical decoded RGB pixels.
+- `tweezers-task-full.webp`: 3740×1711 original `image2.png`, lossless WebP encoding with identical decoded RGB pixels.
+- These supersede the 2400px delivery versions on the homepage. No upscaling or generated details.
+- The 163×122 multi-finger prototype is displayed at no more than its native width; the original source limits its detail.

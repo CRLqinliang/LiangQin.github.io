@@ -17,12 +17,28 @@
     const image = viewer.querySelector('.image-viewer-image');
     const caption = viewer.querySelector('.image-viewer-caption');
     const original = viewer.querySelector('.image-viewer-original');
+    const zoom = viewer.querySelector('.image-viewer-zoom');
+    const canvas = viewer.querySelector('.image-viewer-canvas');
+    const resetZoom = () => {
+      viewer.classList.remove('image-viewer--actual');
+      zoom.setAttribute('aria-pressed', 'false');
+      zoom.textContent = 'Actual size';
+      canvas.scrollTo(0, 0);
+    };
+    zoom.hidden = false;
+    zoom.addEventListener('click', () => {
+      const actual = viewer.classList.toggle('image-viewer--actual');
+      zoom.setAttribute('aria-pressed', String(actual));
+      zoom.textContent = actual ? 'Fit to window' : 'Actual size';
+      canvas.scrollTo(0, 0);
+    });
     let opener;
     document.addEventListener('click', event => {
       const link = event.target.closest('a[href]');
       if (!link || !link.querySelector('img') || !/\.(png|jpe?g|webp|gif|svg)(?:[?#]|$)/i.test(link.href)) return;
       if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
+      resetZoom();
       opener = link;
       image.src = link.href;
       image.alt = link.querySelector('img').alt;
@@ -35,6 +51,7 @@
     });
     viewer.addEventListener('close', () => {
       if (viewer.open) return;
+      resetZoom();
       image.removeAttribute('src');
       if (opener) opener.focus({ preventScroll: true });
     });
