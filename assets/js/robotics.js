@@ -1,13 +1,84 @@
 (() => {
   const button = document.querySelector('.theme-switch');
-  if (!button) return;
-  button.hidden = false;
-  const updateLabel = () => button.setAttribute('aria-label', document.documentElement.dataset.theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-  updateLabel();
-  button.addEventListener('click', () => {
-    const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-    document.documentElement.dataset.theme = theme;
-    try { localStorage.setItem('robotics-theme', theme); } catch (e) {}
+  if (button) {
+    button.hidden = false;
+    const updateLabel = () => button.setAttribute('aria-label', document.documentElement.dataset.theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
     updateLabel();
-  });
+    button.addEventListener('click', () => {
+      const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = theme;
+      try { localStorage.setItem('robotics-theme', theme); } catch (e) {}
+      updateLabel();
+    });
+  }
+
+  const viewer = document.querySelector('.image-viewer');
+  if (viewer && typeof viewer.showModal === 'function') {
+    const image = viewer.querySelector('.image-viewer-image');
+    const caption = viewer.querySelector('.image-viewer-caption');
+    const original = viewer.querySelector('.image-viewer-original');
+    let opener;
+    let previousOverflow;
+    document.addEventListener('click', event => {
+      const link = event.target.closest('a[href]');
+      if (!link || !link.querySelector('img') || !/\.(png|jpe?g|webp|gif|svg)(?:[?#]|$)/i.test(link.href)) return;
+      if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      opener = link;
+      image.src = link.href;
+      image.alt = link.querySelector('img').alt;
+      caption.textContent = image.alt;
+      original.href = link.href;
+      previousOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      viewer.showModal();
+    });
+    viewer.addEventListener('click', event => {
+      if (event.target === viewer) viewer.close();
+    });
+    viewer.addEventListener('close', () => {
+      document.body.style.overflow = previousOverflow || '';
+      image.removeAttribute('src');
+      if (opener) opener.focus({ preventScroll: true });
+    });
+  }
+
+  const track = document.querySelector('.gripper-projects');
+  const navigation = document.querySelector('.gripper-navigation');
+  if (track && navigation) {
+    const cards = [...track.querySelectorAll('.gripper-project')];
+    const previous = navigation.querySelector('.gripper-previous');
+    const next = navigation.querySelector('.gripper-next');
+    const position = navigation.querySelector('.gripper-position');
+    let frame;
+    const currentIndex = () => {
+      const left = track.getBoundingClientRect().left;
+      return cards.reduce((best, card, index) => Math.abs(card.getBoundingClientRect().left - left) < Math.abs(cards[best].getBoundingClientRect().left - left) ? index : best, 0);
+    };
+    const update = () => {
+      const index = currentIndex();
+      previous.disabled = index === 0;
+      next.disabled = index === cards.length - 1;
+      position.textContent = `${index + 1} / ${cards.length}`;
+    };
+    const move = direction => {
+      const index = Math.max(0, Math.min(cards.length - 1, currentIndex() + direction));
+      const left = cards[index].getBoundingClientRect().left - track.getBoundingClientRect().left + track.scrollLeft;
+      track.scrollTo({ left, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    };
+    previous.addEventListener('click', () => move(-1));
+    next.addEventListener('click', () => move(1));
+    track.addEventListener('keydown', event => {
+      if (event.target !== track || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+      event.preventDefault();
+      move(event.key === 'ArrowRight' ? 1 : -1);
+    });
+    track.addEventListener('scroll', () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(update);
+    }, { passive: true });
+    window.addEventListener('resize', update);
+    navigation.hidden = false;
+    update();
+  }
 })();
