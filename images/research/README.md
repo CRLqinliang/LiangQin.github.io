@@ -7,3 +7,12 @@ These are representative third-party product/robotics examples, not the author's
 - `robot-learning-demo.webp`: frame at 00:02 from the Diffusion Policy real-robot mug manipulation demonstration. Source page: https://diffusion-policy.cs.columbia.edu/ . Video: https://diffusion-policy.cs.columbia.edu/videos/highlight_mug.mp4 . Credit: Diffusion Policy project authors.
 
 Retrieved 2026-10-14. Assets remain the property of their respective owners.
+
+## Author-provided gripper project
+
+- `tweezers-design.webp`: author-provided `image7.png`, gripper mechanism and design diagrams.
+- `tweezers-task.webp`: author-provided `image2.png`, small-part measurement task and robot reorientation setup.
+- Both figures are resized to at most 2400 pixels and encoded as WebP for web delivery; their content is unchanged.
+- `tweezers-demo-poster.jpg`: frame at 3 seconds from the author-provided gripper video.
+- `/files/tweezers-gripper-demo.mp4`: author-provided demonstration, remuxed losslessly with fast-start metadata for browser playback.
+- These replace the third-party Robotiq example in the Gripper design entry.
