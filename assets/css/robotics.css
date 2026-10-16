@@ -124,13 +124,20 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print { .site-header, .site-footer, .back-link { display: none; } .document-content { width: 100%; padding: 0; } body { background: white; color: black; } }
 
-/* Author-provided gripper figures and demonstration, side by side on desktop. */
+/* Gripper projects are independent cards with native media controls. */
 .research-grid--projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.research-card--gripper { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: start; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
+.research-card--gripper { grid-column: 1 / -1; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
+.gripper-projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 20px; }
+.gripper-project { min-width: 0; border: 1px solid var(--line); border-radius: 6px; padding: 20px; background: var(--surface); }
+.gripper-project h4 { margin: 0 0 10px; font-size: 18px; line-height: 1.4; }
+.gripper-project > p { min-height: 4.8em; margin-bottom: 18px; }
 .gripper-figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 20px; }
-.gripper-figures figure, .gripper-demo { min-width: 0; margin: 0; }
-.gripper-figures a { display: block; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: white; }
-.gripper-figures img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: contain; }
-.gripper-figures figcaption, .gripper-demo figcaption { margin-top: 8px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.gripper-project figure { min-width: 0; margin: 0; }
+.gripper-project figure > a { display: block; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: white; }
+.gripper-project figure img { display: block; width: 100%; height: auto; object-fit: contain; }
+.gripper-figures img { aspect-ratio: 2 / 1; }
+.gripper-project figcaption { margin-top: 8px; color: var(--muted); font-size: 11px; line-height: 1.6; }
 .gripper-demo video { display: block; width: 100%; height: auto; aspect-ratio: 568 / 320; background: #111; border: 1px solid var(--line); border-radius: 5px; }
-@media (max-width: 640px) { .research-grid--projects, .research-card--gripper { grid-template-columns: 1fr; } .research-card--gripper { gap: 22px; } }
+.gripper-prototype { width: 162px; max-width: 100%; }
+.gripper-sequence { padding-top: 24px; }
+@media (max-width: 640px) { .research-grid--projects, .gripper-projects { grid-template-columns: 1fr; } .gripper-project > p { min-height: 0; } .gripper-project { padding: 16px; } }

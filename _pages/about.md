@@ -38,21 +38,36 @@ redirect_from:
   <h2 id="research-heading">Research interests</h2>
   <div class="research-grid research-grid--projects">
     <article class="research-card research-card--gripper" aria-labelledby="gripper-heading">
-      <div class="gripper-overview">
-        <span class="research-number" aria-hidden="true">01</span><h3 id="gripper-heading">Gripper design</h3>
-        <p>A motor-driven tweezers gripper with interchangeable, 3D-printed adapters for small-object manipulation.</p>
-        <div class="gripper-figures">
-          <figure><a href="{{ '/images/research/tweezers-design.webp' | relative_url }}" aria-label="View full tweezers gripper design diagram"><img src="{{ '/images/research/tweezers-design.webp' | relative_url }}" alt="Motor, drive gears, tweezers adapters and parallel pressing mechanism of the gripper." loading="lazy" decoding="async" width="2400" height="1199"></a><figcaption>Mechanism &amp; design <span aria-hidden="true">↗</span></figcaption></figure>
-          <figure><a href="{{ '/images/research/tweezers-task.webp' | relative_url }}" aria-label="View full small-part measurement task diagram"><img src="{{ '/images/research/tweezers-task.webp' | relative_url }}" alt="Small metal switch parts and a robot reorientation setup for measurement from multiple views." loading="lazy" decoding="async" width="2400" height="1098"></a><figcaption>Small-part measurement task <span aria-hidden="true">↗</span></figcaption></figure>
-        </div>
+      <span class="research-number" aria-hidden="true">01</span><h3 id="gripper-heading">Gripper design</h3>
+      <div class="gripper-projects">
+        <section class="gripper-project" aria-labelledby="tweezers-heading">
+          <h4 id="tweezers-heading">Tweezers gripper</h4>
+          <p>A motor-driven tweezers gripper with interchangeable, 3D-printed adapters for small-object manipulation.</p>
+          <figure class="gripper-demo">
+            <video controls muted playsinline preload="none" poster="{{ '/images/research/tweezers-demo-poster.jpg' | relative_url }}" aria-label="Silent demonstration of the tweezers gripper manipulating a small metal part" width="568" height="320">
+              <source src="{{ '/files/tweezers-gripper-demo.mp4' | relative_url }}" type="video/mp4">
+              Your browser does not support embedded video. <a href="{{ '/files/tweezers-gripper-demo.mp4' | relative_url }}">Download the demonstration</a>.
+            </video>
+            <figcaption>Gripper demonstration · <a href="{{ '/files/tweezers-gripper-demo.mp4' | relative_url }}">Open video</a></figcaption>
+          </figure>
+          <div class="gripper-figures">
+            <figure><a href="{{ '/images/research/tweezers-task.webp' | relative_url }}" aria-label="View full small-part measurement task diagram"><img src="{{ '/images/research/tweezers-task.webp' | relative_url }}" alt="Small metal switch parts and a robot reorientation setup for measurement from multiple views." loading="lazy" decoding="async" width="2400" height="1098"></a><figcaption>Small-part measurement task <span aria-hidden="true">↗</span></figcaption></figure>
+            <figure><a href="{{ '/images/research/tweezers-design.webp' | relative_url }}" aria-label="View full tweezers gripper design diagram"><img src="{{ '/images/research/tweezers-design.webp' | relative_url }}" alt="Motor, drive gears, tweezers adapters and parallel pressing mechanism of the gripper." loading="lazy" decoding="async" width="2400" height="1199"></a><figcaption>Mechanism &amp; design <span aria-hidden="true">↗</span></figcaption></figure>
+          </div>
+        </section>
+        <section class="gripper-project" aria-labelledby="multi-finger-heading">
+          <h4 id="multi-finger-heading">Multi-finger gripper</h4>
+          <p>A gripper prototype and a sequence showing the fingers closing around a cylindrical object.</p>
+          <figure class="gripper-prototype">
+            <a href="{{ '/images/research/multi-finger-prototype.png' | relative_url }}" aria-label="View full multi-finger gripper prototype photo"><img src="{{ '/images/research/multi-finger-prototype.png' | relative_url }}" alt="Gripper prototype with its motors, wiring and articulated fingers." loading="lazy" decoding="async"></a>
+            <figcaption>Gripper prototype <span aria-hidden="true">↗</span></figcaption>
+          </figure>
+          <figure class="gripper-sequence">
+            <a href="{{ '/images/research/multi-finger-grasp-sequence.jpg' | relative_url }}" aria-label="View full multi-finger grasping sequence"><img src="{{ '/images/research/multi-finger-grasp-sequence.jpg' | relative_url }}" alt="Five successive views of the articulated gripper closing around a cylindrical object." loading="lazy" decoding="async" width="765" height="206"></a>
+            <figcaption>Grasping sequence <span aria-hidden="true">↗</span></figcaption>
+          </figure>
+        </section>
       </div>
-      <figure class="gripper-demo">
-        <video controls playsinline preload="none" poster="{{ '/images/research/tweezers-demo-poster.jpg' | relative_url }}" aria-label="Demonstration of the tweezers gripper manipulating a small metal part" width="568" height="320">
-          <source src="{{ '/files/tweezers-gripper-demo.mp4' | relative_url }}" type="video/mp4">
-          Your browser does not support embedded video. <a href="{{ '/files/tweezers-gripper-demo.mp4' | relative_url }}">Download the demonstration</a>.
-        </video>
-        <figcaption>Gripper demonstration · <a href="{{ '/files/tweezers-gripper-demo.mp4' | relative_url }}">Open video</a></figcaption>
-      </figure>
     </article>
     <article class="research-card"><div class="research-thumbnail"><img src="{{ '/images/research/motion-planning-screen.webp' | relative_url }}" alt="MoveIt RViz motion-planning interface with Panda robot poses." loading="lazy" decoding="async"></div><span class="research-number" aria-hidden="true">02</span><h3>Grasp &amp; motion planning</h3><p>Grasp pose generation and robot motion generation.</p><p class="research-credit">Screenshot: <a href="https://moveit.ai/">MoveIt</a></p></article>
     <article class="research-card"><div class="research-thumbnail"><img src="{{ '/images/research/robot-learning-demo.webp' | relative_url }}" alt="Real robot manipulating a mug in the Diffusion Policy demonstration." loading="lazy" decoding="async"></div><span class="research-number" aria-hidden="true">03</span><h3>Robot learning</h3><p>Learning-based approaches to robotic manipulation.</p><p class="research-credit">Demo: <a href="https://diffusion-policy.cs.columbia.edu/">Diffusion Policy</a></p></article>
