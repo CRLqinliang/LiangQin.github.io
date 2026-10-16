@@ -2,7 +2,7 @@
   {% for publication in site.data.publications %}
   <article class="publication-card publication-card--featured">
     {% if publication.paper_url %}<a class="publication-thumbnail" href="{{ publication.paper_url | relative_url }}" aria-label="Read {{ publication.title | escape }}">{% else %}<div class="publication-thumbnail">{% endif %}
-      <img src="{{ publication.image | relative_url }}" alt="{{ publication.image_alt | escape }}" loading="lazy" decoding="async" width="830" height="614">
+      <img src="{{ publication.image | relative_url }}" alt="{{ publication.image_alt | escape }}" loading="lazy" decoding="async" width="{{ publication.image_width }}" height="{{ publication.image_height }}">
     {% if publication.paper_url %}</a>{% else %}</div>{% endif %}
     <div class="publication-details">
       <p class="home-eyebrow">{% if publication.year %}{{ publication.year }} · {% endif %}{{ publication.status }}</p>

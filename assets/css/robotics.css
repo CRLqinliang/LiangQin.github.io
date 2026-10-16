@@ -53,7 +53,7 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 .publication-card { display: grid; grid-template-columns: 280px minmax(0, 1fr); align-items: center; gap: 36px; padding: 28px 0; border-top: 1px solid var(--line); }
 .publication-card:first-child { border-top: 0; padding-top: 0; }
 .publication-thumbnail { display: block; background: white; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
-.publication-thumbnail img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; }
+.publication-thumbnail img { display: block; width: 100%; height: auto; object-fit: contain; }
 .publication-card h3 { font-size: 19px; }
 .publication-card h3 a { color: var(--text); }
 .publication-card .home-eyebrow { margin-bottom: 8px; }
@@ -134,33 +134,35 @@ h3 { font-size: 19px; margin: 0 0 8px; }
 .gripper-navigation button { width: 36px; height: 34px; border: 1px solid var(--line); border-radius: 4px; color: var(--text); background: var(--bg); cursor: pointer; }
 .gripper-navigation button:disabled { opacity: .35; cursor: default; }
 .gripper-position { min-width: 38px; text-align: center; color: var(--muted); font-size: 12px; }
-.gripper-projects { display: grid; grid-auto-flow: column; grid-auto-columns: min(880px, calc(100% - 48px)); gap: 24px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; padding-bottom: 16px; scrollbar-width: auto; scrollbar-color: var(--muted) var(--surface); }
+.gripper-projects { display: grid; grid-auto-flow: column; grid-auto-columns: min(980px, calc(100% - 40px)); gap: 20px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; padding-bottom: 16px; scrollbar-width: auto; scrollbar-color: var(--muted) var(--surface); }
 .gripper-projects::-webkit-scrollbar { height: 12px; }
 .gripper-projects::-webkit-scrollbar-track { background: var(--surface); border-radius: 6px; }
 .gripper-projects::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 6px; border: 3px solid var(--surface); }
 .gripper-projects:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
-.gripper-project { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px 24px; align-content: start; min-width: 0; border: 1px solid var(--line); border-radius: 6px; padding: 24px; background: var(--surface); scroll-snap-align: start; }
-.gripper-project > h4 { grid-column: 1 / -1; }
+.gripper-project { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: 22px 28px; align-content: start; min-width: 0; border: 1px solid var(--line); border-radius: 6px; padding: 24px; background: var(--surface); scroll-snap-align: start; }
+.gripper-intro { grid-column: 1 / -1; border-bottom: 1px solid var(--line); padding-bottom: 16px; }
+.gripper-intro p { margin: 8px 0 0; max-width: none; font-size: 14px; line-height: 1.65; color: var(--muted); }
 .gripper-project h4 { margin: 0; font-size: 18px; line-height: 1.4; }
 .gripper-project > p { grid-column: 1; margin: 0; }
-.gripper-figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.gripper-figures { display: grid; grid-template-columns: 1fr; gap: 14px; }
 .gripper-project figure { min-width: 0; margin: 0; }
 .gripper-project figure > a { display: block; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: white; }
 .gripper-project figure img { display: block; width: 100%; height: auto; object-fit: contain; }
-.gripper-figures img { aspect-ratio: 2 / 1; }
-.gripper-project figcaption { margin-top: 8px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.gripper-figures img { aspect-ratio: 2 / 1; max-height: 130px; background: white; }
+.gripper-project figcaption { margin-top: 6px; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .gripper-demo video { display: block; width: 100%; height: auto; aspect-ratio: 568 / 320; background: #111; border: 1px solid var(--line); border-radius: 5px; }
-.gripper-project--tweezers > .gripper-demo { grid-column: 2; grid-row: 2 / span 2; }
-.gripper-project--tweezers > .gripper-figures { grid-column: 1; }
-.gripper-prototype { width: 162px; max-width: 100%; grid-column: 1; }
-.gripper-project--multi > .gripper-sequence { grid-column: 2; grid-row: 2 / span 2; align-self: center; }
-.gripper-project--master-arm { grid-template-columns: minmax(0, 1fr) 190px; align-items: center; }
+.gripper-project--tweezers > .gripper-demo { grid-column: 1; grid-row: 2; align-self: center; }
+.gripper-project--tweezers > .gripper-figures { grid-column: 2; grid-row: 2; }
+.gripper-project--multi { grid-template-columns: 210px minmax(0, 1fr); grid-template-rows: auto 1fr; align-content: normal; }
+.gripper-prototype { width: 190px; max-width: 100%; grid-column: 1; align-self: center; justify-self: center; }
+.gripper-project--multi > .gripper-sequence { grid-column: 2; grid-row: 2; align-self: center; }
+.gripper-project--master-arm { grid-template-columns: minmax(0, 1fr) 240px; align-items: center; }
 .master-arm-description h4 { margin-bottom: 14px; }
 .master-arm-description p, .master-arm-features { color: var(--muted); font-size: 14px; line-height: 1.7; }
 .master-arm-features { padding-left: 20px; margin: 18px 0 0; }
 .master-arm-features li { margin-bottom: 8px; }
 .master-arm-features strong { color: var(--text); }
-.gripper-project .master-arm-demo { width: 158px; max-width: 100%; justify-self: center; }
+.gripper-project .master-arm-demo { width: 184px; max-width: 100%; justify-self: center; }
 .master-arm-demo video { aspect-ratio: 9 / 16; }
 /* Native modal preview keeps readers on the homepage with a clear way back. */
 .image-viewer { width: min(1200px, calc(100% - 32px)); max-width: none; max-height: calc(100dvh - 32px); border: 1px solid var(--line); border-radius: 8px; padding: 20px; color: var(--text); background: var(--bg); }
@@ -177,9 +179,12 @@ h3 { font-size: 19px; margin: 0 0 8px; }
  .research-grid--projects { grid-template-columns: 1fr; }
  .gripper-projects { grid-auto-columns: calc(100% - 24px); gap: 14px; }
  .gripper-project { grid-template-columns: 1fr; padding: 16px; gap: 16px; }
- .gripper-project > h4, .gripper-project > p, .gripper-project--tweezers > .gripper-demo, .gripper-project--tweezers > .gripper-figures, .gripper-prototype, .gripper-project--multi > .gripper-sequence { grid-column: 1; grid-row: auto; }
+ .gripper-intro, .gripper-project > h4, .gripper-project > p, .gripper-project--tweezers > .gripper-demo, .gripper-project--tweezers > .gripper-figures, .gripper-prototype, .gripper-project--multi > .gripper-sequence { grid-column: 1; grid-row: auto; }
+ .gripper-figures { grid-template-columns: repeat(2, minmax(0, 1fr)); }
  .gripper-project .master-arm-demo { width: 140px; }
  .image-viewer { padding: 12px; }
 }
 
 body:has(.image-viewer[open]) { overflow: hidden; }
+
+.research-grid--projects > .research-card:not(.research-card--gripper) .research-thumbnail img { aspect-ratio: 2.2 / 1; object-fit: cover; }
